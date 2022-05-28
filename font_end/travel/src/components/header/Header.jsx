@@ -11,11 +11,11 @@ const Header = () => {
 
     return (
         <div className='header'>
-            <div className=' w-screen h-[56px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
+            <div className='header_nav w-screen h-[70px] z-10 bg-zinc-100 fixed drop-shadow-lg'>
                 <div className="px-2 flex  items-center w-full h-full justify-around">
                     <div className="flex items-center ">
                         <h1 className="text-3xl font-bold mr-44 sm:text-4xl">Travel</h1>
-                        <ul className="hidden md:flex font-medium   ">
+                        <ul className=" hidden md:flex font-medium text-lg ml-5 ">
                             <li>Trang chủ</li>
                             <li>Địa điểm</li>
                             <li>Dịch vụ</li>
@@ -25,10 +25,10 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="hidden md:flex pr-4">
-                        <button className='border-none bg-transparent text-black mr-4 font-medium'>
-                            Sign In
+                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
+                            Đăng  nhập
                         </button>
-                        <button className='px-8 py-3 font-medium' >Sign Up</button>
+                        <button className='px-8 py-2 font-medium' >Đăng ký</button>
                     </div>
                     <div className="md:hidden" onClick={handleClick}>
                         {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
@@ -42,8 +42,8 @@ const Header = () => {
                     <li className='border-b-2 border-zinc-300 w-full'>Tin tức</li>
                     <li className='border-b-2 border-zinc-300 w-full'>Liên hệ</li>
                     <div className='flex flex-col my-4'>
-                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
-                        <button className='px-8 py-3'>Sign Up</button>
+                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Đăng nhập</button>
+                        <button className='px-8 py-3'>Đăng ký</button>
                     </div>
                 </ul>
             </div >
