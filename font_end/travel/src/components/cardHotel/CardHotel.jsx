@@ -44,9 +44,9 @@ const CardHotel = () => {
 
         <>
 
-            <div className='slickHotel'>
-                <div className='title'>
-                    <h1 className='text-2xl'>Khách sạn đang thịnh hành</h1>
+            <div className='slickHotel col-span-4'>
+                <div className='title col-span-2'>
+                    <h1 className='text-4xl  font-bold  '>Khách sạn đang thịnh hành</h1>
                     <h1 className='mt-2'>Các khách sạn được tìm kiếm & đặt nhiều nhất do HelloTravelHelloTravel đề xuất</h1>
                 </div>
 
@@ -56,9 +56,10 @@ const CardHotel = () => {
                             <div className='card-item'>
                                 <div className='card-top'>
                                     <img src={item.linkImg} alt={item.title} />
-                                    <h1 className='text-lg'>{item.title}</h1>
+
                                 </div>
                                 <div className='card-bottom'>
+                                    <h1 className='text-lg'>{item.title}</h1>
                                     <h3>{item.location}</h3>
                                     <h2>{item.price}</h2>
                                 </div>
