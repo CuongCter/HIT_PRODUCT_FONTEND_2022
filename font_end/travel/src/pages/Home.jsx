@@ -3,9 +3,11 @@ import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import CardSale from '../components/cardSale/CardSale'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import CardHotel from '../components/cardHotel/CardHotel'
+
 import InfoLocation from '../components/infoLocation/InfoLocation'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
@@ -15,7 +17,7 @@ const Home = () => {
         <div>
             <Header />
             <CardSale />
-            <CardHotel />
+
             <InfoLocation />
             <Footer />
         </div>

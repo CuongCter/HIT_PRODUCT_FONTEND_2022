@@ -4,22 +4,32 @@ import { dataBestSeller } from './data';
 import './CardSale.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import LeftArrow from "../assets/left-arrow.svg"
+import RightArrow from "../assets/right-arrow.svg"
 
 const Card = () => {
+    const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+        <img src={LeftArrow} alt="prevArrow" {...props} />
+    );
+
+    const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+        <img className="" src={RightArrow} alt="nextArrow" {...props} />
+    );
     const settings = {
         dots: true,
         infinite: false,
         speed: 500,
         slidesToShow: 4,
-        slidesToScroll: 3,
-        initialSlide: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        prevArrow: <SlickArrowLeft />,
+        nextArrow: <SlickArrowRight />,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 },
@@ -28,7 +38,7 @@ const Card = () => {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 1,
                     initialSlide: 2
                 },
             },
@@ -36,32 +46,30 @@ const Card = () => {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 4
+                    slidesToScroll: 1
                 },
             }
         ]
     };
     return (
         <>
-            <div className='slickSale  '>
-                <div>
-                    <img src="/font_end/travel/src/img/flashsalelogo.png" alt="" />
-                </div>
+            <div className='slickSale xl:pl-32 xl:pr-32'>
+
                 <div>Chỗ này để flase sale</div>
                 .
                 .
                 .
-                <Slider {...settings}>
+                <Slider {...settings} >
                     {dataBestSeller.map((item) => (
                         <div className='cardSale'>
-                            <div className='cardSale-item'>
-                                <div className='cardSale-top'>
+                            <div className='cardSale-item m-2 '>
+                                <div className='cardSale-top '>
                                     <img src={item.linkImg} alt={item.title} />
-                                    <h1 className='text-lg'>{item.title}</h1>
+                                    <h1 className='text-lg pl-2'>{item.title}</h1>
                                 </div>
-                                <div className='carSale-bottom'>
+                                <div className='carSale-bottom pl-2  '>
                                     <h3>{item.location}</h3>
-                                    <h2>{item.price}</h2>
+                                    <h2 className="flex justify-end">{item.price}</h2>
                                 </div>
 
                             </div>
