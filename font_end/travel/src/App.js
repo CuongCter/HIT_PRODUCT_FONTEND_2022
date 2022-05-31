@@ -1,19 +1,25 @@
-
-import Home from "./pages/Home";
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Header from "./components/header/Header";
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { publicRoutes } from './routers/router';
 function App() {
   return (
-    <div>
-      
-      <BrowserRouter>
-      <Routes>
-        <Route path="/" element ={<Home/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Router>
+    <div className="App">
+        <Routes>
+            {publicRoutes.map((route, index) => {
+                const Layout = route.component
+                return (
+                    <Route
+                        key={index}
+                        path={route.path}
+                        element={
+                          <Layout />
+                        }
+                    />
+                );
+            })}
+        </Routes>
     </div>
-    
+</Router>
   );
 }
 

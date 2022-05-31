@@ -43,16 +43,23 @@ const Card = () => {
     };
     return (
         <>
-            <div className='slick'>
+            <div className='slickSale  '>
+                <div>
+                    <img src="/font_end/travel/src/img/flashsalelogo.png" alt="" />
+                </div>
+                <div>Chỗ này để flase sale</div>
+                .
+                .
+                .
                 <Slider {...settings}>
                     {dataBestSeller.map((item) => (
-                        <div className='card'>
-                            <div className='card-item'>
-                                <div className='card-top'>
+                        <div className='cardSale'>
+                            <div className='cardSale-item'>
+                                <div className='cardSale-top'>
                                     <img src={item.linkImg} alt={item.title} />
                                     <h1 className='text-lg'>{item.title}</h1>
                                 </div>
-                                <div className='card-bottom'>
+                                <div className='carSale-bottom'>
                                     <h3>{item.location}</h3>
                                     <h2>{item.price}</h2>
                                 </div>
@@ -62,8 +69,12 @@ const Card = () => {
                     ))
                     }
                 </Slider>
+                <div className="text-center mt-10 text-xl ">
+                    <button className="px-5 py-2 text-pink-400 back bg-white border-pink-400">Xem thêm</button>
+                </div>
 
             </div >
+
         </>
 
     )
