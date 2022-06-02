@@ -23,10 +23,10 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='hidden md:flex pr-4 lg:hidden xl:block'>
-                        <button className='border-none bg-transparent text-black mr-4'>
-                            Sign In
+                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
+                            Đăng nhập
                         </button>
-                        <button className='px-8 py-3'>Sign Up</button>
+                        <button className='px-8 py-3 font-medium text-lg'>Đăng kí</button>
                     </div>
                     <div className='md:hidden mr-4 lg:hidden' onClick={handleClick}>
                         {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
@@ -35,12 +35,12 @@ const Navbar = () => {
 
                 <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
                     {dataHeader.map((item) => (
-                        <li className='text-black font-medium border-b-2 border-zinc-300 w-full'>{item.title}</li>
+                        <li className='text-black font-medium border-b-2 border-zinc-300 w-full '>{item.title}</li>
                     ))}
 
                     <div className='flex flex-col my-4'>
-                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 '>Sign In</button>
-                        <button className='px-8 py-3'>Sign Up</button>
+                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-lg'>Đăng nhập</button>
+                        <button className='px-8 py-3 text-lg'>Đăng Ký</button>
                     </div>
                 </ul>
             </div>
