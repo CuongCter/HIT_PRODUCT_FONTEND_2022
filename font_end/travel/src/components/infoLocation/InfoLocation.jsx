@@ -1,6 +1,6 @@
 import React from 'react'
 import './InfoLocation.scss'
-
+import { imgs } from '../assets/img'
 
 const InfoLocation = (dataLoca) => {
     return (
@@ -17,15 +17,25 @@ const InfoLocation = (dataLoca) => {
 
                 </div>
 
-                <div className='infoLocation__content_main xl:grid xl:grid-cols-4 xl:gap-4 lg:grid lg:grid-cols-3 lg:gap-4 md:mt-3 sm:grid'>
-                    <div className='infoLocation__content_main-pic xl:row-span-2 xl:min-h-[186px] xl:min-w-[285px] lg:row-span-2 lg:min-h-[180px]'>
-                        <img src="/font_end/travel/public/imgs/hanoi2.png" alt="" />
+                <div className='infoLocation__content_main xl:grid xl:grid-cols-4 xl:gap-4 xl:grid-rows-2 lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-5 lg:mt-10 md:mt-3 sm:grid '>
+                    <div className='infoLocation__content_main-pic xl:h-full xl:row-span-2 xl:min-h-[186px] xl:max-h-full xl:min-w-[285px]  lg:max-h-[250px]  '>
+                        <img src={imgs.img1} alt="" className='w-full h-full '></img>
                     </div>
-                    <div className='infoLocation__content_main-pic xl:row-span-1 xl:min-h-[186px] xl:min-w-[286px] lg:row-span-2 lg:min-h-[180px]'>2</div>
-                    <div className='infoLocation__content_main-pic xl:row-span-2 xl:min-h-[186px] xl:min-w-[285px] lg:row-span-2 lg:min-h-[180px]'>3</div>
-                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px] lg:row-span-2 lg:min-h-[180px]'>4</div>
-                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px] lg:row-span-2 lg:min-h-[180px]'>5</div>
-                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px] lg:row-span-2 lg:min-h-[180px]'>6</div>
+                    <div className='infoLocation__content_main-pic xl:h-full xl:row-span-1 xl:min-h-[186px] xl:max-h-full xl:min-w-[286px]  lg:max-h-[250px] '>
+                        <img src={imgs.img2} alt="" className='w-full h-full '></img>
+                    </div>
+                    <div className='infoLocation__content_main-pic xl:h-full xl:row-span-2 xl:min-h-[186px] xl:max-h-full xl:min-w-[285px]   lg:max-h-[250px]'>
+                        <img src={imgs.img3} alt="" className='w-full h-full '></img>
+                    </div>
+                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px]  lg:min-h-[250px] '>
+                        <img src={imgs.img4} alt="" className='w-full h-full '></img>
+                    </div>
+                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px]  lg:min-h-[250px] '>
+                        <img src={imgs.img5} alt="" className='w-full h-full '></img>
+                    </div>
+                    <div className='infoLocation__content_main-pic  xl:row-span-1 xl:min-h-[186px] xl:min-w-[285px]  lg:min-h-[250px] '>
+                        <img src={imgs.img6} alt="" className='w-full h-full '></img>
+                    </div>
                 </div>
             </div>
 
