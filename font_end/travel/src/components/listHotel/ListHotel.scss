@@ -1,0 +1,134 @@
+@media only screen and (min-width: 64em) {
+    .cardMoblie {
+        display: none;
+    }
+
+    .card {
+        height: 1150px;
+        background-color: #EDF6F9;
+    }
+
+    .cardList {
+        border-radius: 10px;
+        height: 450px;
+        width: 279px;
+        box-shadow: 12px 4px 1px 0px rgb(126, 111, 111);
+
+        &-item {
+            background-color: white;
+            height: 450px;
+            width: 279px;
+            border-radius: 10px;
+        }
+
+        &-top {
+            border-radius: 10px 10px 0 0;
+
+            img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &-bottom {
+            border-radius: 10px;
+
+
+        }
+
+
+
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width:1024px) {
+    .cardMoblie {
+        display: none;
+    }
+
+    .card {
+        height: 1600px;
+        background-color: #EDF6F9;
+    }
+
+    .cardList {
+        border-radius: 10px;
+        height: 450px;
+        width: 279px;
+        box-shadow: 10px 4px 1px 0px rgb(126, 111, 111);
+
+        &-item {
+            background-color: white;
+            height: 450px;
+            width: 279px;
+            border-radius: 10px;
+        }
+
+        &-top {
+            border-radius: 10px 10px 0 0;
+
+            img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &-bottom {
+            border-radius: 10px;
+
+
+        }
+
+
+
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+    .card {
+        display: none;
+    }
+
+    .cardMoblie {
+        height: 680px;
+        background-color: #EDF6F9;
+    }
+
+    .cardList {
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        height: 500px;
+        width: 301px;
+        border-radius: 10px;
+
+        &-item {
+            background-color: white;
+            height: 500px;
+            width: 320px;
+            border-radius: 10px;
+        }
+
+        &-top {
+            border-radius: 10px 10px 0 0;
+
+            img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &-bottom {
+            border-radius: 10px;
+
+
+        }
+
+
+
+    }
+}

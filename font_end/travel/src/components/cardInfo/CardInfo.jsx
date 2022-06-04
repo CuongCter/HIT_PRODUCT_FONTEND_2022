@@ -1,7 +1,5 @@
 import React from 'react'
 import './CardInfo.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { } from '@fortawesome/free-solid-svg-icons'
 import { dataInfo } from './dataInfo'
 import { Link } from 'react-router-dom'
 import "slick-carousel/slick/slick.css";
@@ -47,7 +45,7 @@ const CardInfo = () => {
     };
     return (
         <>
-            <div className='card'>
+            <div className='cardA'>
                 <h1 className='font-bold text-3xl pt-5 mb-5'>Gặp gỡ chúng tôi</h1>
                 <ul className='card-list '>
                     {dataInfo.map((item) => (
@@ -74,11 +72,12 @@ const CardInfo = () => {
                                 </div>
                             </div>
                         </li>
-
                     ))}
                 </ul>
+                <h1 className='font-medium mt-5'>Trải qua nhiều năm hoạt động, Hello Travel đã không ngừng phát triền kinh doanh trên lĩnh vực Du lịch, nâng cao chất lượng, đa dạng hoá các hạng mục dịch vụ, nhằm mục đích cao nhất là làm hài lòng mọi yêu cầu của Quý khách hàng. Chúng tôi tin tưởng rằng với uy tín đã tạo được trên thị trường, cùng với sự định hướng và chỉ đạo của Ban lãnh đạo Công ty TNHH Du Lịch và Dịch Vụ HelloTravel luôn đem đến cho khách hàng những sản phẩm, dịch vụ đạt chất lượng tốt nhất với giá cả cạnh tranh. Nguyên tắc hoạt động kinh doanh của HelloTravel là: “Sự hài lòng của Quý khách luôn là tiêu chí hàng đầu của HelloTravel
+                    Cùng với đội ngũ cán bộ, nhân viên đầy kinh nghiệm, chúng tôi hi vọng HelloTravel đã và sẽ là địa chỉ lựa chọn các dịch vụ du lịch đáng tin cậy hàng đầu của Quý khách.</h1>
             </div >
-            <div className='cardMoblie'>
+            <div className='cardMoblieInfo'>
                 <Slider {...settings} className="slickInfo">
                     {dataInfo.map((item) => (
                         <div class="moblie_card-container ">
@@ -102,8 +101,6 @@ const CardInfo = () => {
                                 </div>
                             </div>
                         </div>
-
-
                     ))}
                 </Slider>
             </div>
