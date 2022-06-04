@@ -4,17 +4,15 @@ import { dataBestSeller } from './data';
 import './CardSale.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import LeftArrow from "../assets/left-arrow.svg"
-import RightArrow from "../assets/right-arrow.svg"
+import { Stack, Rating } from '@mui/material'
+import { imgs } from '../assets/img'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocation, faLocationDot, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons'
+
 
 const Card = () => {
-    const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-        <img src={LeftArrow} alt="prevArrow" {...props} />
-    );
 
-    const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-        <img className="" src={RightArrow} alt="nextArrow" {...props} />
-    );
+
     const settings = {
         dots: true,
         infinite: false,
@@ -22,8 +20,7 @@ const Card = () => {
         slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
-        prevArrow: <SlickArrowLeft />,
-        nextArrow: <SlickArrowRight />,
+
         responsive: [
             {
                 breakpoint: 1024,
@@ -54,22 +51,42 @@ const Card = () => {
     return (
         <>
             <div className='slickSale xl:pl-32 xl:pr-32'>
+                <div className='slickSale_img pt-3 pb-5 ml-2'>
+                    <img style={{ height: 50 }} src={imgs.imgSale} alt="" />
+                </div>
 
-                <div>Chỗ này để flase sale</div>
-                .
-                .
-                .
                 <Slider {...settings} >
                     {dataBestSeller.map((item) => (
                         <div className='cardSale'>
                             <div className='cardSale-item m-2 '>
                                 <div className='cardSale-top '>
+
                                     <img src={item.linkImg} alt={item.title} />
-                                    <h1 className='text-lg pl-2'>{item.title}</h1>
+                                    <h1 className='text-lg pl-2 font-semibold'>{item.title}</h1>
+
+                                    <Rating className='pl-2'
+                                        name="size-small" defaultValue={5} size="small" />
                                 </div>
                                 <div className='carSale-bottom pl-2  '>
-                                    <h3>{item.location}</h3>
-                                    <h2 className="flex justify-end">{item.price}</h2>
+                                    <div className='flex mb-2'>
+                                        <div className='mr-2'><FontAwesomeIcon icon={faLocationDot} /></div>
+                                        <div><h3>{item.location}</h3></div>
+
+                                    </div>
+                                    <div className='flex'>
+                                        <button className='mr-1 mb-2 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400'><FontAwesomeIcon icon={faUmbrellaBeach} /> {item.point}</button>
+                                        <h3 className=''>{item.cmt}</h3>
+                                    </div>
+                                    <span className='bg-slate-200 border-neutral-100 rounded-sm text-blue-500'>{item.time}</span>
+                                    <div className='flex justify-between '>
+                                        <button className='mt-8 p-2 bg-orange-400 rounded-500 border-orange-400'>Đã bán: {item.bought}</button>
+                                        <div className='mr-4'>
+                                            <h2 className="justify-end line-through mt-5">{item.price}</h2>
+                                            <h1 className='flex justify-end text-lg font-medium'>???</h1>
+                                        </div>
+
+                                    </div>
+
                                 </div>
 
                             </div>

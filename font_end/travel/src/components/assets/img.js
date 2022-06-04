@@ -4,7 +4,9 @@ import hochiminh from './imgs/ho chi minh.jpg'
 import dalat from './imgs/da lat.jpg'
 import phuquoc from './imgs/phú quốc.jpg'
 import hoian from './imgs/hoi an.jpg'
+import sale from './imgs/flashsalelogo.png'
 export const imgs = {
+    imgSale: sale,
     img1: hanoi,
     title1: 'Hà Nội',
     img2: danang,   
