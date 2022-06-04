@@ -1,7 +1,11 @@
 .slickSale {
-    background-color: #f6e0e5;
+    background-color: #fae6eb;
     width: 100%;
-    height: 558px;
+    height: 708px;
+
+    // &_img {
+    //     height: 64px;
+    // }
 }
 
 
@@ -15,8 +19,15 @@
 // // }
 
 
+.slick-arrow::before {
+    font-size: 50px !important;
+    z-index: 999;
+
+}
+
 .cardSale {
-    height: 380px;
+    height: 490px;
+    z-index: 1;
 
     &-top {
         border-radius: 10px 10px 0 0;
@@ -30,11 +41,17 @@
 
     &-bottom {
         border-radius: 10px;
+
+        &_end {
+            button {
+                background-color: #FF9E43;
+            }
+        }
     }
 
     &-item {
         background-color: white;
-        height: 362px;
+        height: 440px;
         border-radius: 10px;
     }
 }
