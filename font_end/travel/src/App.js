@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routers/router';
+
+// import { MenuIcon, XIcon } from '@heroicons/react/outline'
+
 function App() {
   return (
     <Router>
