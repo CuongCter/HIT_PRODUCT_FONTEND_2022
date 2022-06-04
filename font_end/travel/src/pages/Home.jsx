@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import CardInfo from '../components/cardInfo/CardInfo'
 import CommentCard from '../components/comment/CommentCard'
 import CardHotel from '../components/cardHotel/CardHotel'
+import ListHotel from '../components/listHotel/ListHotel'
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
             <CardSale />
             <CardHotel />
             <InfoLocation />
+            <ListHotel />
             <CommentCard />
             <CardInfo />
             <Footer />

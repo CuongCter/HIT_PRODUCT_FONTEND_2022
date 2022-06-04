@@ -1,10 +1,17 @@
 @media only screen and (min-width: 64em) {
-    .cardMoblie {
+    .cardMoblieInfo {
         display: none;
     }
 
+    .cardA {
+        height: 700px;
+        background-color: #EDF6F9;
+        width: 100%;
+        padding: 0 126px 0 126px;
+    }
+
     .card {
-        height: 500px;
+        height: 700px;
         background-color: #EDF6F9;
         width: 100%;
         padding: 0 126px 0 126px;
@@ -13,6 +20,7 @@
         &-list {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
 
             &__item {}
         }
@@ -70,9 +78,7 @@
 }
 
 @media only screen and (min-width: 46.25em) and (max-width:1024px) {
-    .slickInfo {
-        display: none;
-    }
+
 
     .card {
         height: 965px;
@@ -149,12 +155,11 @@
         display: none;
     }
 
-    .cardMoblie {
+    .cardMoblieInfo {
         height: 450px;
         background-color: rgb(186, 232, 232);
         width: 100%;
-        padding: 0px;
-
+        margin: 0;
     }
 
     .moblie_card-container {
@@ -168,7 +173,7 @@
             img {
                 height: 100px;
                 width: 100px;
-                transform: translate(150px, 90px);
+                transform: translate(135px, 90px);
             }
         }
 

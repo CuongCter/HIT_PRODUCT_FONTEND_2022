@@ -3,3 +3,35 @@
     width: 100%;
     background-color: white;
 }
+
+.slick-arrow::before {
+    font-size: 50px !important;
+    z-index: 999;
+
+}
+
+.cardComment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+
+    &-item {
+        background-color: #FFF3F3;
+        height: 390px;
+        width: 290px;
+        padding: 10px;
+        border-radius: 10px;
+
+
+        &_cus {
+            align-items: flex-end;
+
+            img {
+                height: 70px;
+                width: 70px;
+            }
+        }
+    }
+}
