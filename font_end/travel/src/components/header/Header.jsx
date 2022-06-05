@@ -15,11 +15,11 @@ const Navbar = () => {
             <div>
                 <video src='/videos/beach_-_3998 (Original).mp4' autoPlay loop muted />
             </div>
-            <div className='w-screen h-[70px] z-10 bg-zinc-200 fixed drop-shadow-lg '>
+            <div className='w-screen md:h-[80px] lg:h-[56px] z-10 bg-zinc-200 fixed drop-shadow-lg '>
                 <div className='px-10 flex justify-between items-center w-full h-full '>
                     <div className='flex items-center '>
                         <h1 className='text-3xl font-bold xl:mr-12 sm:text-3xl'>HelloTravel</h1>
-                        <ul className='hidden md:flex md:ml-44 text-lg  font-normal '>
+                        <ul className='hidden md:flex md:ml-40 text-lg  font-normal '>
                             {dataHeader.map((item) => (
                                 <li><Link to={item.linkPage} onClick className='text-black font-medium'>{item.title}</Link></li>
                             ))}
@@ -42,8 +42,8 @@ const Navbar = () => {
                     ))}
 
                     <div className='flex flex-col my-4'>
-                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-lg'>Đăng nhập</button>
-                        <button className='px-8 py-3 text-lg'>Đăng Ký</button>
+                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-base'>Đăng nhập</button>
+                        <button className='px-8 py-3 text-base'>Đăng Ký</button>
                     </div>
                 </ul>
             </div>
