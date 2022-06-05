@@ -1,10 +1,12 @@
 @media only screen and (min-width: 64em) {
     .infoLocation {
-        height: 700px;
+        height: 541px;
         background-color: rgb(215, 240, 236);
-        padding: 31px 126px 44px 126px;
+
 
         &__content {
+            padding: 31px 126px 44px 126px;
+
             &_header {
                 display: flex;
                 justify-content: space-between;
@@ -16,7 +18,7 @@
                     border-radius: 8px;
 
                     img {
-                        box-shadow: 3px 3px rgb(126, 123, 123);
+
                         border-radius: 8px;
 
                     }
@@ -31,11 +33,14 @@
 
 
     }
+
+
 }
 
-@media only screen and (min-width:768px) and (max-width:63.9375em) {
+@media only screen and (min-width:768px) and (max-width:1024px) {
     .infoLocation {
-
+        height: 500px;
+        background-color: rgb(215, 240, 236);
 
         &_content {
             &_main {
@@ -75,7 +80,7 @@
                     border-radius: 8px;
 
                     img {
-                        box-shadow: 3px 3px rgb(126, 123, 123);
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
                         border-radius: 8px;
 
                     }

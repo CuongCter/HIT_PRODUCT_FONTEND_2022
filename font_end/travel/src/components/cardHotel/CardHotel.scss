@@ -1,7 +1,7 @@
 .slickHotel {
     background-color: rgb(224, 242, 216);
     width: 100%;
-    height: 708px;
+    height: 520px;
 
     // &_img {
     //     height: 64px;
@@ -26,25 +26,33 @@
 }
 
 .cardHotel {
-    height: 490px;
+    height: 402px;
+    border-radius: 5px;
     z-index: 1;
 
     &-item {
-        border-radius: 1px solid black;
+        background-color: white;
+        height: 402px;
+        border-radius: 5px;
+        width: 279px;
+        box-shadow: 0px 0.5px 3px rgba(0, 0, 0, 0.25);
     }
 
+
     &-top {
-        border-radius: 10px 10px 0 0;
+        border-radius: 5px 5px 0 0;
 
         img {
+            height: 155px;
+            width: 279px;
             background-size: cover;
             background-repeat: no-repeat;
-            border-radius: 10px 10px 0 0;
+            border-radius: 5px 5px 0 0;
         }
     }
 
     &-bottom {
-        border-radius: 10px;
+        border-radius: 5px;
 
         &_end {
             button {
@@ -53,9 +61,5 @@
         }
     }
 
-    &-item {
-        background-color: white;
-        height: 460px;
-        border-radius: 10px;
-    }
+
 }

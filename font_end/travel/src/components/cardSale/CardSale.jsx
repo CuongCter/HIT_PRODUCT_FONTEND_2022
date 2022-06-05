@@ -50,15 +50,15 @@ const Card = () => {
     };
     return (
         <>
-            <div className='slickSale xl:pl-32 xl:pr-32'>
+            <div className='slickSale xl:pl-32 xl:pr-32 sm:pl-5'>
                 <div className='slickSale_img pt-3 pb-5 ml-2'>
-                    <img style={{ height: 50 }} src={imgs.imgSale} alt="" />
+                    <img style={{ height: 64, marginTop: 15 }} src={imgs.imgSale} alt="" />
                 </div>
 
                 <Slider {...settings} >
                     {dataBestSeller.map((item) => (
                         <div className='cardSale'>
-                            <div className='cardSale-item m-2 '>
+                            <div className='cardSale-item  '>
                                 <div className='cardSale-top '>
 
                                     <img src={item.linkImg} alt={item.title} />
@@ -68,21 +68,21 @@ const Card = () => {
                                         name="size-small" defaultValue={5} size="small" />
                                 </div>
                                 <div className='carSale-bottom pl-2  '>
-                                    <div className='flex mb-2'>
-                                        <div className='mr-2'><FontAwesomeIcon icon={faLocationDot} /></div>
-                                        <div><h3>{item.location}</h3></div>
+                                    <div className='flex '>
+                                        <div className='mr-2 text-sm'><FontAwesomeIcon icon={faLocationDot} /></div>
+                                        <div><h3 className='text-sm'>{item.location}</h3></div>
 
                                     </div>
                                     <div className='flex'>
                                         <button className='mr-1 mb-2 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400'><FontAwesomeIcon icon={faUmbrellaBeach} /> {item.point}</button>
-                                        <h3 className=''>{item.cmt}</h3>
+                                        <h4 className=''>{item.cmt}</h4>
                                     </div>
-                                    <span className='bg-slate-200 border-neutral-100 rounded-sm text-blue-500'>{item.time}</span>
+                                    <span className='bg-slate-200 text-sm border-neutral-100 rounded-sm text-blue-500'>{item.time}</span>
                                     <div className='flex justify-between '>
-                                        <button className='mt-8 p-2 bg-orange-400 rounded-500 border-orange-400'>Đã bán: {item.bought}</button>
+                                        <button className='mt-7 h-10 p-1 bg-orange-400 rounded-500 border-orange-400'>Đã bán: {item.bought}</button>
                                         <div className='mr-4'>
-                                            <h2 className="justify-end line-through mt-5">{item.price}</h2>
-                                            <h1 className='flex justify-end text-lg font-medium'>???</h1>
+                                            <h3 className="justify-end line-through mt-5">{item.price}</h3>
+                                            <h1 className='flex justify-end text-lg font-medium text-pink-400'>???</h1>
                                         </div>
 
                                     </div>
@@ -94,8 +94,8 @@ const Card = () => {
                     ))
                     }
                 </Slider>
-                <div className="text-center mt-10 text-xl ">
-                    <button className="px-5 py-2 text-pink-400 back bg-white border-pink-400">Xem thêm</button>
+                <div className="text-center mt-7 text-xl ">
+                    <button className="px-5 py-2 text-pink-400 back bg-pink-100 border-pink-400">Xem thêm</button>
                 </div>
 
             </div >

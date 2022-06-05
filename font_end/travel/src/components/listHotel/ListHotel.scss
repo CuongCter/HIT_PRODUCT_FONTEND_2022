@@ -4,27 +4,32 @@
     }
 
     .card {
-        height: 1150px;
+        height: 1057px;
         background-color: #EDF6F9;
+
+
     }
 
     .cardList {
-        border-radius: 10px;
-        height: 450px;
+        border-radius: 5px;
+        height: 402px;
         width: 279px;
-        box-shadow: 12px 4px 1px 0px rgb(126, 111, 111);
+        margin-top: 15px;
 
         &-item {
             background-color: white;
-            height: 450px;
+            height: 402px;
             width: 279px;
             border-radius: 10px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
         }
 
         &-top {
             border-radius: 10px 10px 0 0;
 
             img {
+                width: 279px;
+                height: 155px;
                 background-size: cover;
                 background-repeat: no-repeat;
                 border-radius: 10px 10px 0 0;
@@ -40,6 +45,11 @@
 
 
     }
+
+    .btn-location:hover {
+        background-color: rgb(171, 169, 168);
+        color: white;
+    }
 }
 
 @media only screen and (min-width: 46.25em) and (max-width:1024px) {
@@ -48,21 +58,22 @@
     }
 
     .card {
-        height: 1600px;
+        height: 1200px;
         background-color: #EDF6F9;
     }
 
     .cardList {
         border-radius: 10px;
         height: 450px;
-        width: 279px;
-        box-shadow: 10px 4px 1px 0px rgb(126, 111, 111);
+        width: 200px;
+
 
         &-item {
             background-color: white;
             height: 450px;
-            width: 279px;
+            width: 260px;
             border-radius: 10px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
         }
 
         &-top {
