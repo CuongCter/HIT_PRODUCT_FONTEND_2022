@@ -1,6 +1,6 @@
 import React from 'react'
-
 import "./Footer.scss"
+
 const Footer = () => {
   
   return (
@@ -33,19 +33,19 @@ const Footer = () => {
             <div>
               <div>
                 <i class="fa-brands fa-twitter"></i>
-                <a href="">Twitter</a>
+                <a href="#">Twitter</a>
               </div>
               <div>
                 <i class="fa-brands fa-facebook"></i>
-                <a href="">Facebook</a>
+                <a href="#">Facebook</a>
               </div>
               <div>
                 <i class="fa-brands fa-instagram"></i>
-                <a href="">Instagram</a>
+                <a href="#">Instagram</a>
               </div>
               <div>
                 <i class="fa-brands fa-youtube"></i>
-                <a href="">Youtube</a>
+                <a href="#">Youtube</a>
               </div>        
             </div>
           </div>

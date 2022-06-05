@@ -76,4 +76,18 @@
       text-align: justify;
   }
 
+ }
+ 
+ // Tablet
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
+    .container-comment {
+        padding: 0 30px 50px;
+    }
+}
+// Mobile
+@media only screen and (max-width: 46.1875em) {
+    .container-comment {
+        padding: 0 20px 50px;
+        
+    }
 }
