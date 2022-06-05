@@ -30,6 +30,7 @@ p {
 
 a {
     color: rgb(221, 214, 214);
+    padding-left: 10px;
 }
 
 .footer__top {
@@ -76,12 +77,10 @@ a {
     }
 
     .bott {
-        padding: 25px;
+        padding: 50px;
+        text-align: center;
     }
 
-    .bott__p {
-        margin-left: 150px;
-    }
 }
 
 // ************************************************

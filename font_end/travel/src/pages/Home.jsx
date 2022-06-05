@@ -11,7 +11,11 @@ import "slick-carousel/slick/slick-theme.css";
 import CardInfo from '../components/cardInfo/CardInfo'
 import CommentCard from '../components/comment/CommentCard'
 import CardHotel from '../components/cardHotel/CardHotel'
+
 import ListHotel from '../components/listHotel/ListHotel'
+
+import Blogs from '../components/blogs/Blogs'
+
 
 
 
@@ -26,7 +30,9 @@ const Home = () => {
             <ListHotel />
             <CommentCard />
             <CardInfo />
+            <Blogs />
             <Footer />
+            
         </div>
     )
 }
