@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import CardSale from '../components/cardSale/CardSale'
+import MeetUs from '../MeetUs/MeetUs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import InfoLocation from '../components/infoLocation/InfoLocation'
@@ -29,7 +30,8 @@ const Home = () => {
             <InfoLocation />
             <ListHotel />
             <CommentCard />
-            <CardInfo />
+            {/* <CardInfo /> */}
+            <MeetUs />
             <Blogs />
             <Footer />
             
