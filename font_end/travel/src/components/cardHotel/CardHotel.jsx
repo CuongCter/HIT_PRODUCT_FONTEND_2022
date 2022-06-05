@@ -78,7 +78,7 @@ const CardHotel = () => {
                                     <h1 className='flex justify-end text-lg font-medium mr-2'>{item.pay}</h1>
                                     <div className='flex justify-between border-dashed border-2 rounded-md border-slate-200 mb-3 mt-2 p-1 mr-2'>
                                         <div>
-                                            <h2>Mã: <span>DONNHE <button>-5%</button></span></h2>
+                                            <h2>Mã: <span className='text-blue-400'>DONNHE <button className='bg-blue-500'>-5%</button></span></h2>
                                         </div>
                                         <div>
                                             <h1 className='font-medium text-lg text-pink-400 '>{item.pay}</h1>
