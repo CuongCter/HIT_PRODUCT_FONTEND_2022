@@ -34,8 +34,8 @@
 .img-right {
   width: 285px;
   height: 152px;
-  left: 1029px;
-  top: 119px;
+  // left: 1029px;
+  // top: 119px;
   border-radius: 5px;
 }
 .title-right {
@@ -47,28 +47,4 @@
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
 }
-// // PC
-// @media only screen and (min-width: 64em) {
-//   .container-blog {
-//     padding: 43px 126px 44px 126px ;
-    
-//   }
-// }
-// // Tablet
-// @media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
-//   .container-blog {
-//     padding: 43px 10px 44px 10px;
-//   }
-//   .general-news {
-//     padding: 0px 20px;
-//   }
-// }
-// //mobile
-// @media only screen and (max-with:740px) {
-//   .container-blog {
-//     padding: 43px 20px 44px 20px;
-//   }
-//   .general-news {
-//     padding: 0px 20px;
-//   }
-// }
+

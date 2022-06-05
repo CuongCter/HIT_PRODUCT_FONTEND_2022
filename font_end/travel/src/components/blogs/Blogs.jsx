@@ -8,7 +8,7 @@ const Blogs = () => {
     <div className="container-blog">
       <b className='title'>Cảm hứng cho những chuyến đi</b>
       <p className='desc-title'>Những câu chuyện thú vị đằng sau mỗi bài viết</p>
-      <div className="list-news grid grid-cols-2">
+      <div className="list-news grid grid-cols-2 gap-3 ">
         <div className="cols-span-1">
 
           <div className="general-news"> 
