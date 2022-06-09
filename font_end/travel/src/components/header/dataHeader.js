@@ -2,7 +2,7 @@ export const dataHeader = [
     {
         id: 1,
         title: "Trang chủ",
-        linkPage: "/home"
+        linkPage: "/"
     },
     {
         id: 2,

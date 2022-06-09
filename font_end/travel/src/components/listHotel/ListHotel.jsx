@@ -2,8 +2,8 @@ import React from 'react'
 import { dataList } from './dataList'
 import './ListHotel.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocation, faLocationDot, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons'
-import { Stack, Rating } from '@mui/material'
+import { faLocationDot, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons'
+import { Rating } from '@mui/material'
 import Slider from 'react-slick'
 const ListHotel = () => {
     const settings = {
@@ -51,7 +51,7 @@ const ListHotel = () => {
                     ))}
                 </div>
 
-                <div className='card-list '>
+                <div className='card-list grid  xl:grid-cols-4 sm:grid-cols-1 lg:grid-cols-4 md:grid-cols-3 gap-9'>
                     {dataList.map((item) => (
                         <div className='card-list__item'>
                             <div className='cardList'>
@@ -95,7 +95,7 @@ const ListHotel = () => {
 
                     ))}
                 </div>
-                <div className="text-center mt-5 text-xl ">
+                <div className="text-center mt-6 text-xl ">
                     <button className="px-5 py-2 text-pink-400 back bg-white border-pink-400">Xem tất cả</button>
                 </div>
             </div >

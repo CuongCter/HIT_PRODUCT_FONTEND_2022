@@ -32,7 +32,7 @@ const Card = () => {
                 },
             },
             {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -58,7 +58,7 @@ const Card = () => {
                 <Slider {...settings} >
                     {dataBestSeller.map((item) => (
                         <div className='cardSale'>
-                            <div className='cardSale-item  '>
+                            <div className='cardSale-item '>
                                 <div className='cardSale-top '>
 
                                     <img src={item.linkImg} alt={item.title} />
@@ -95,7 +95,7 @@ const Card = () => {
                     }
                 </Slider>
                 <div className="text-center mt-7 text-xl ">
-                    <button className="px-5 py-2 text-pink-400 back bg-pink-100 border-pink-400">Xem thêm</button>
+                    <button className="px-4 py-2 mt-2 text-pink-400 back bg-pink-100 border-pink-400">Xem thêm</button>
                 </div>
 
             </div >
