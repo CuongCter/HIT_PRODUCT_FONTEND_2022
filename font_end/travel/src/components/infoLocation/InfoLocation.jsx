@@ -12,12 +12,12 @@ const InfoLocation = () => {
                         <h2 className='xl:text-base md:text-lg sm:text-xs'>Các địa điểm du lịch hàng đầu do HelloTravel đề xuất </h2>
                     </div>
                     <div className='infoLocation__content_header-btn '>
-                        <button className="px-5 py-2 text-pink-400 back bg-white border-pink-400 ">Khám phá ngay</button>
+                        <button className="px-5 py-2 mr-5 text-pink-400 back bg-white border-pink-400 ">Khám phá ngay</button>
                     </div>
 
                 </div>
 
-                <div className='infoLocation__content_main lg:grid lg:grid-cols-4 lg:gap-4 lg:grid-rows-2 md:grid md:grid-cols-3 md:grid-rows-1 md:gap-5 md:mt-5 sm:mt-3 sm:grid '>
+                <div className='infoLocation__content_main lg:grid lg:grid-cols-4 lg:gap-4 lg:grid-rows-4 md:grid md:grid-cols-3 md:grid-rows-2 md:gap-5 md:mt-5 sm:mt-3 sm:grid '>
                     <div className='infoLocation__content_main-pic lg:h-full lg:row-span-2 lg:max-h-[390px]  lg:max-w-[285px]  md:max-h-[250px]  '>
                         <button className='mt-2 ml-2 absolute w-20 bg-pink-500 border-pink-500'>{dataLocation.haNoi}</button>
                         <img src={imgs.img1} alt="" className='w-full h-full '></img>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import { animateScroll as scroll, } from 'react-scroll'
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import './Header.scss'
+import { Link } from 'react-router-dom'
 import { dataHeader } from './dataHeader';
 
 const Navbar = () => {
@@ -26,10 +27,16 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='hidden md:flex pr-4 lg:hidden xl:block'>
+                        <Link to='/signin'>
                         <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
                             Đăng nhập
                         </button>
-                        <button className='px-8 py-3 font-medium text-lg'>Đăng kí</button>
+                        </Link>
+                        
+                        <Link to='/signup'>
+                            <button className='px-8 py-2 font-medium text-lg'>Đăng ký</button>
+                        </Link>
+
                     </div>
                     <div className='md:hidden mr-4 lg:hidden' onClick={handleClick}>
                         {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
@@ -42,7 +49,8 @@ const Navbar = () => {
                     ))}
 
                     <div className='flex flex-col my-4'>
-                        <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-base'>Đăng nhập</button>
+                        <Link to='\login'><button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-base'>Đăng nhập</button></Link>
+
                         <button className='px-8 py-3 text-base'>Đăng Ký</button>
                     </div>
                 </ul>
