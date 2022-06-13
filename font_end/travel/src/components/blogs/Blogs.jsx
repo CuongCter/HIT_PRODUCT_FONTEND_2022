@@ -8,7 +8,7 @@ const Blogs = () => {
     <div className="container-blog">
       <b className='title'>Cảm hứng cho những chuyến đi</b>
       <p className='desc-title'>Những câu chuyện thú vị đằng sau mỗi bài viết</p>
-      <div className="list-news grid grid-cols-2 gap-3 ">
+      <div className="list-news grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3 ">
         <div className="cols-span-1">
 
           <div className="general-news"> 
@@ -17,7 +17,7 @@ const Blogs = () => {
           </div>    
         </div>
 
-        <div className="grid grid-cols-2 cols-span-1 gap-3">
+        <div className="grid xl:grid-cols-2 xl:cols-span-1 md:grid-cols-1 md:cols-span-1 sm:grid-cols-1 sm:cols-span-1 gap-3">
             {dataBlogs.map((item, index) => {
               return (
                 <div key={index} className="general-news item-news col-span-1"> 

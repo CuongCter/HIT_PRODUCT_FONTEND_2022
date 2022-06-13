@@ -53,3 +53,20 @@
   -webkit-line-clamp: 3;
   text-overflow: ellipsis;
 }
+
+// Tablet
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em){
+  .container-blog {
+    padding: 43px 30px 44px;
+  }
+  
+}
+// Mobile
+@media only screen and (max-width: 46.1875em) {
+  .container-blog {
+    padding: 43px 20px 44px ;
+  }
+  .title-right {
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.recent-posts {
+  width: 1440px;
+  height: 580px;
+  background-color: white;
+  padding: 43px 126px 43px 126px;
+}
+.recent-posts-theme {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.img-posts {
+  width: 586px;
+  height: 320px;
+  border-radius: 5px;
+ 
+}
+.title2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+}
