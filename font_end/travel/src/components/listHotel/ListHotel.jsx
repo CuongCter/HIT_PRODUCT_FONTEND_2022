@@ -78,7 +78,7 @@ const ListHotel = () => {
                                         <h2 className="flex justify-end  line-through font-thin right-0 mr-2 text-sm">{item.price}</h2>
                                         <h1 className='flex justify-end font-medium mr-2 text-sm'>{item.pay}</h1>
                                         <div className='flex justify-between border-dashed border-2 rounded-md border-slate-200 mb-3 mt-2 p-1 mr-2'>
-                                            <div>
+                                            <div className='mt-1'>
                                                 <h2 className='text-sm'>Mã: <span className='text-sm text-blue-400'>DONNHE <button className='bg-blue-400 text-sm'>-5%</button></span></h2>
                                             </div>
                                             <div>
