@@ -12,8 +12,8 @@ const Locations = () => {
       <Location />
       <TopPosts />
       <RecentPosts />
-      <Footer/>
-        
+      <Footer />
+
     </div>
   )
 }
