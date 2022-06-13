@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 1025px) {
     .cardMoblie {
         display: none;
     }
@@ -6,7 +6,8 @@
     .card {
         height: 1057px;
         background-color: #EDF6F9;
-
+        width: 100%;
+        padding: 0 126px 0 126px;
 
     }
 
@@ -38,11 +39,7 @@
 
         &-bottom {
             border-radius: 10px;
-
-
         }
-
-
 
     }
 
@@ -52,26 +49,27 @@
     }
 }
 
-@media only screen and (min-width: 46.25em) and (max-width:1024px) {
+@media only screen and (min-width:415px) and (max-width:768px) {
     .cardMoblie {
         display: none;
     }
 
     .card {
-        height: 1200px;
+        height: 1600px;
         background-color: #EDF6F9;
+        padding: 5px;
     }
 
     .cardList {
+        margin-top: 10px;
         border-radius: 10px;
-        height: 450px;
+        height: 430px;
         width: 200px;
-
 
         &-item {
             background-color: white;
-            height: 450px;
-            width: 260px;
+            height: 430px;
+            width: 250px;
             border-radius: 10px;
             box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
         }
@@ -98,6 +96,60 @@
 
 }
 
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .cardMoblie {
+        display: none;
+    }
+
+    .card {
+        height: 1057px;
+        background-color: #EDF6F9;
+        width: 100%;
+        padding: 5px;
+
+    }
+
+    .cardList {
+        border-radius: 5px;
+        height: 402px;
+        width: 250px;
+        margin-top: 15px;
+
+        &-item {
+            background-color: white;
+            height: 402px;
+            width: 230px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        &-top {
+            border-radius: 10px 10px 0 0;
+
+            img {
+                width: 279px;
+                height: 155px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &-bottom {
+            border-radius: 10px;
+        }
+
+    }
+
+    .btn-location:hover {
+        background-color: rgb(171, 169, 168);
+        color: white;
+    }
+}
+
+
+
 @media only screen and (max-width: 415px) {
     .card {
         display: none;
@@ -115,6 +167,7 @@
         height: 500px;
         width: 301px;
         border-radius: 10px;
+
 
         &-item {
             background-color: white;

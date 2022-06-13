@@ -41,15 +41,58 @@
 
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
+@media only screen and (min-width:1025px) {
     .infoLocation {
-        height: 500px;
+        height: 541px;
         background-color: rgb(215, 240, 236);
 
-        &_content {
+
+        &__content {
+            // padding: 31px 126px 44px 126px;
+
+            &_header {
+                display: flex;
+                justify-content: space-between;
+            }
+
             &_main {
                 &-pic {
-                    img {}
+                    box-shadow: cadetblue 1px;
+                    border-radius: 8px;
+
+                    img {
+
+                        border-radius: 8px;
+
+                    }
+
+                    span {
+                        position: relative;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .infoLocation {
+        height: 700px;
+        background-color: rgb(215, 240, 236);
+        padding: 5px;
+
+        &_content {
+
+
+            &_main {
+                &-pic {
+
+                    img {
+                        border-radius: 5px;
+                    }
                 }
             }
         }
