@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from './routers/router';
 function App() {
+  const isLogin = localStorage.getItem('isLogin')
   return (
     <Router>
     <div className="App">

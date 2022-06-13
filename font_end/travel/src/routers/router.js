@@ -1,12 +1,19 @@
 <<<<<<< Updated upstream
 
-import SignIn from "../components/SignIn/SignIn";
+import Resgister from "../modules/Auth/Resgister/Resgister";
+import Login from "../modules/Auth/Login/Login";
 import Home from "../pages/Home";
-import Login from "../pages/Login";
+import { Navigate } from "react-router-dom";
+import ForgotPassword from "../modules/Auth/forgot-password/ForgotPassword";
+
 const publicRoutes = [
+    
+   
     { path: '/', component: Home },
-     {path: '/signup',component: Login },
-     {path: '/signin', component: SignIn}
+    { path: '/login', component: Login },
+    { path: '/resgister', component: Resgister },
+    { path: '/pass', component: ForgotPassword },
+     
 ]; 
 =======
 import Home from "../pages/Home";

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { animateScroll as scroll, } from 'react-scroll'
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import './Header.scss'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { dataHeader } from './dataHeader';
 
 const Navbar = () => {
@@ -10,7 +10,22 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
     const handleClose = () => setNav(!nav)
+    const navigate = useNavigate()
 
+    const handleLogoutSystem = () => {
+        localStorage.setItem('isLogin', false)
+        const isLogin = localStorage.getItem('isLogin')
+        if (isLogin === 'false') {
+            localStorage.removeItem('accessToken')
+            navigate('/login')
+            window.history.replaceState({}, "/");
+            localStorage.removeItem('isLogin')
+        }
+    }
+
+    const isLogin = localStorage.getItem('isLogin')
+
+    // console.log(isLogin);
     return (
         <div className='header'>
             <div>
@@ -27,15 +42,29 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='hidden md:flex pr-4 lg:hidden xl:block'>
-                        <Link to='/signin'>
-                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
-                            Đăng nhập
-                        </button>
-                        </Link>
-                        
-                        <Link to='/signup'>
-                            <button className='px-8 py-2 font-medium text-lg'>Đăng ký</button>
-                        </Link>
+                        {
+                            isLogin ?
+                                <>
+                                    <div> <i class="fa-solid fa-user"></i></div>
+
+                                    {/* <button>Đổi mật khẩu</button> */}
+                                    <button onClick={handleLogoutSystem}>Logout</button>
+                                </>
+                                :
+                                <>
+
+                                    <Link to='/login'>
+                                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
+                                            Đăng nhập
+                                        </button>
+                                    </Link>
+                                    <Link to='/resgister'>
+                                        <button className='px-8 py-2 font-medium text-lg'>Đăng ký</button>
+                                    </Link>
+                                </>
+                        }
+
+
 
                     </div>
                     <div className='md:hidden mr-4 lg:hidden' onClick={handleClick}>
@@ -49,9 +78,14 @@ const Navbar = () => {
                     ))}
 
                     <div className='flex flex-col my-4'>
-                        <Link to='\login'><button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-base'>Đăng nhập</button></Link>
+                        {
+                            isLogin ? <button onClick={handleLogoutSystem}>Logout</button> :
+                                <><Link to='\login'><button className='bg-transparent text-indigo-600 px-8 py-3 mb-4 text-base'>Đăng nhập</button></Link>
 
-                        <button className='px-8 py-3 text-base'>Đăng Ký</button>
+                                    <Link to='\register'><button className='px-8 py-3 text-base'>Đăng Ký</button></Link></>
+                        }
+
+
                     </div>
                 </ul>
             </div>

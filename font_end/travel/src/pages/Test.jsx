@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { gapi} from 'gapi-script'
 const clientId = '36536591056-nqetopeqi2e466uk4ujl7dh8e73m9n73.apps.googleusercontent.com'
-const Login = () => {
+const Test= () => {
 
     useEffect(() => {
         function start() {
@@ -23,4 +23,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Test
