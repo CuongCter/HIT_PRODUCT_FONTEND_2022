@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import CardSale from '../components/cardSale/CardSale'
-import MeetUs from '../components/MeetUs/MeetUs'
+import MeetUs from '../components/meetUs/MeetUs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import InfoLocation from '../components/infoLocation/InfoLocation'
@@ -12,7 +12,13 @@ import CommentCard from '../components/comment/CommentCard'
 import CardHotel from '../components/cardHotel/CardHotel'
 import ListHotel from '../components/listHotel/ListHotel'
 import Blogs from '../components/blogs/Blogs'
+<<<<<<< Updated upstream
 import CardInfo from '../components/cardInfo/CardInfo'
+=======
+
+
+
+>>>>>>> Stashed changes
 const Home = () => {
     return (
         <div>
