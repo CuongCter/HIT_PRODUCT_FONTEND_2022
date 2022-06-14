@@ -49,9 +49,9 @@ const Navbar = () => {
                                     <div className='icon-user mr-12 font-bold text-2xl flex mb-1' onClick={() => setShow(!show)} >  <i class="fa-solid fa-user"></i></div>
                                     {
                                         show && <>
-                                            <div className='absolute h-[65px] w-[105px] border-white bg-white '>
-                                                <h1 className=' px-4 py-1 border-b-2 cursor-pointer hover:bg-violet-100' onClick={handleLogoutSystem}>Logout</h1>
-                                                <h1 className='flex justify-center cursor-pointer hover:bg-violet-100'> <Link to='/changepass ' className='text-black'>ChangePass</Link> </h1>
+                                            <div className='absolute h-[65px] w-[110px] border-white bg-white '>
+                                                <h1 className=' px-4 py-1 border-b-2 cursor-pointer hover:bg-violet-100' onClick={handleLogoutSystem}>Đăng xuất</h1>
+                                                <h1 className='flex justify-center cursor-pointer hover:bg-violet-100'> <Link to='/changepass ' className='text-black'>Đổi mật khẩu</Link> </h1>
                                             </div></>
                                     }
                                     {/* <button>Đổi mật khẩu</button> */}

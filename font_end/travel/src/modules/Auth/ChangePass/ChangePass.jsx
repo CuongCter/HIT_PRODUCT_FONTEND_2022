@@ -22,11 +22,12 @@ const ChangePass = () => {
             }
             else {
                 try {
-                    console.log(values.username);
+                    console.log(values.oldPassword);
+                    console.log(values.newPassword);
                     const resData = await axios.patch('https://api-travell.herokuapp.com/api/v1/users/changePassword',
                         {
-                            oldPassword: JSON.stringify(values.oldPassword) ,
-                            newPassword: JSON.stringify(values.newPassword) 
+                            oldPassword: values.oldPassword,
+                            newPassword: values.newPassword,
                         })
                     console.log(resData);
 
