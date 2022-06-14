@@ -36,8 +36,6 @@ const Resgister = () => {
         },
         validate,
         onSubmit: async (values) => {
-            console.log(values.account);
-            console.log(values.password);
             if (values.account === '' || values.password === '' || values.confirmPassword === '' || values.fullName === '' || values.email === '' || values.phoneNumber === '') {
                 alert('Vui lòng điền đầy đủ thông tin')
             }
@@ -97,6 +95,7 @@ const Resgister = () => {
                                     className='inputSignup '
                                     placeholder='Nhập tài khoản'
                                 />
+
                                 {formik.errors.account ? <div>{formik.errors.account}</div> : null}
                                 <br />
                                 <input

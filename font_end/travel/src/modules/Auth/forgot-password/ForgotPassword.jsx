@@ -14,9 +14,8 @@ const ForgotPassword = () => {
         onSubmit: async (values) => {
             //alert(JSON.stringify(values, null, 2));
             try {
-                const resData = await axios.delete('https://api-travell.herokuapp.com/api/v1/auth/resetPassword', {
-                    username: values.username,
-                })
+                console.log(values.username);
+                const resData = await axios.delete('https://api-travell.herokuapp.com/api/v1/auth/resetPassword', {username: values.username})
                 console.log(resData);
 
             } catch (err) {

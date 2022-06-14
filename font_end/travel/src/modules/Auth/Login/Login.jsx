@@ -39,6 +39,7 @@ const Login = () => {
                 const resData = await axios.get('https://api-travell.herokuapp.com/api/v1/users/get', values)
                 console.log(resData);
                 alert('Đăng nhập thành công')
+
                 if (resData.status === 200) {
                     navigate('/')
                     localStorage.setItem('accessToken', resData.data.token);
