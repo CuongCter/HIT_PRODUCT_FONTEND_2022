@@ -12,6 +12,11 @@ import CommentCard from '../components/comment/CommentCard'
 import CardHotel from '../components/cardHotel/CardHotel'
 import ListHotel from '../components/listHotel/ListHotel'
 import Blogs from '../components/blogs/Blogs'
+<<<<<<< Updated upstream
+=======
+import CardInfo from '../components/cardInfo/CardInfo'
+
+>>>>>>> Stashed changes
 
 
 const Home = () => {
