@@ -9,13 +9,14 @@ import axios from 'axios'
 const ForgotPassword = () => {
     const formik = useFormik({
         initialValues: {
-            username: '',
+            username:'',
         },
         onSubmit: async (values) => {
             //alert(JSON.stringify(values, null, 2));
             try {
                 console.log(values.username);
-                const resData = await axios.delete('https://api-travell.herokuapp.com/api/v1/auth/resetPassword', {username: values.username})
+                const resData = await axios.delete('https://api-travell.herokuapp.com/api/v1/auth/resetPassword',
+                 {username: JSON.stringify(values.username)})
                 console.log(resData);
 
             } catch (err) {
