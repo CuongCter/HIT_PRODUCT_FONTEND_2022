@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 
 import Resgister from "../modules/Auth/Resgister/Resgister";
@@ -18,6 +19,22 @@ const publicRoutes = [
     { path: '/changepass', component: ChangePass },
      
 ]; 
+=======
+import SignIn from "../components/SignIn/SignIn";
+import Home from "../pages/Home";
+import Locations from "../pages/Locations";
+import Login from "../pages/Login";
+
+const publicRoutes = [
+    { path: '/', component: Home },
+    { path: '/signup',component: Login },
+    { path: '/signin', component: SignIn },
+    { path: '/location', component: Locations }
+]; 
+
+
+
+>>>>>>> Stashed changes
 
 const privateRoutes = [];
 

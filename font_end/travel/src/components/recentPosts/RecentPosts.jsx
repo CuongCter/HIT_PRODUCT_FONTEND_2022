@@ -13,7 +13,7 @@ const recentPosts = () => {
                 <div key={index} className=" item-content-bot">
                   <div className="general-posts">
                     <img className='img-posts' src={item.img2} alt="" />
-                    <p className="title2">{item.title2}</p>
+                    <p className="title-2">{item.title2}</p>
                   </div>
                 </div>
               )
