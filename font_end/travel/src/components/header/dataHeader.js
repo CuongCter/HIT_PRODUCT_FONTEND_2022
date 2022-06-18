@@ -21,11 +21,6 @@ export const dataHeader = [
     },
     {
         id: 5,
-        title: "Tin tức",
-        linkPage: "/news"
-    },
-    {
-        id: 6,
         title: "Liên hệ",
         linkPage: "/contact"
     },

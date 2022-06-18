@@ -45,7 +45,7 @@ const Resgister = () => {
 
             else {
                 try {
-                    const result = await axios.post('https://api-travell.herokuapp.com/api/v1/users/create', {
+                    const result = await axios.post('https://api-travell.herokuapp.com/api/v1/users', {
                         username: values.account,
                         password: values.password,
                         fullName: values.fullName,
@@ -60,7 +60,7 @@ const Resgister = () => {
                 }
                 catch (err) {
                     console.log(err)
-                    alert('Tài khoản đã tồn tại')
+                    //alert('Tài khoản đã tồn tại')
                 }
             }
         },
@@ -151,7 +151,7 @@ const Resgister = () => {
 
                                 <br />
                                 <br />
-                                <button className='btn-signup bg-[#FC5981] hover:bg-[#9ec0e2] hover:text-black ' type="submit">Đăng ký</button>
+                                <button className='hover:ease-in  hover:duration-300 btn-signup bg-[#FC5981] hover:bg-[#9ec0e2] hover:text-black ' type="submit">Đăng ký</button>
                             </form>
                         </div>
                         <h1 className='mt-5'>Bạn đã có tài khoản ? <Link to='/login'><span className='text-[#00B6F3] font-bold'>Đăng nhập</span></Link> </h1>

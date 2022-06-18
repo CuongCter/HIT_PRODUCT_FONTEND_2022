@@ -5,20 +5,20 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik';
 import axios from 'axios'
+import { API } from '../const/const.api'
 
 const ForgotPassword = () => {
     const formik = useFormik({
         initialValues: {
-            username:'',
+            username: '',
         },
         onSubmit: async (values) => {
             //alert(JSON.stringify(values, null, 2));
             try {
                 console.log(values.username);
-                const resData = await axios.delete('https://api-travell.herokuapp.com/api/v1/auth/resetPassword',
-                 {username: JSON.stringify(values.username)})
+                const resData = await axios.delete(`${API}auth/resetPassword/${values.username}`)
                 console.log(resData);
-
+                alert('Thay đổi mật khẩu thành công')
             } catch (err) {
                 console.log(err)
                 alert('Fail')

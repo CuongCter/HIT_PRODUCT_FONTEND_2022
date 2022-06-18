@@ -22,14 +22,17 @@ const ChangePass = () => {
             }
             else {
                 try {
-                    console.log(values.oldPassword);
-                    console.log(values.newPassword);
+                    console.log(values);
                     const resData = await axios.patch('https://api-travell.herokuapp.com/api/v1/users/changePassword',
                         {
                             oldPassword: values.oldPassword,
-                            newPassword: values.newPassword,
-                        })
-                    console.log(resData);
+                            newPassword: values.newPassword
+                        },
+                        // {
+                        //     headers: { authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2dXF1eW5oIiwiaWF0IjoxNjU1MjIyMDk0LCJleHAiOjE2NTUzMDg0OTR9.V_hA88YPfABajAiGOHJ7UmTBdNZoeLkVNLiFgTb4jqU' }
+                        // })
+                    )
+                    console.log(resData)
 
                 } catch (err) {
                     console.log(err)

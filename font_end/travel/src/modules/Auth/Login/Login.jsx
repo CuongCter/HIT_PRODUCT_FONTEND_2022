@@ -36,13 +36,13 @@ const Login = () => {
 
             // alert(JSON.stringify(values, null, 2));
             try {
-                const resData = await axios.get('https://api-travell.herokuapp.com/api/v1/users/get', values)
+                const resData = await axios.post('https://api-travell.herokuapp.com/api/v1/auth/login', values)
                 console.log(resData);
                 alert('Đăng nhập thành công')
 
                 if (resData.status === 200) {
                     navigate('/')
-                    localStorage.setItem('accessToken', resData.data.token);
+                    localStorage.setItem('accessToken', resData.data.jwt);
                     localStorage.setItem('isLogin', true)
                 }
             } catch (err) {
@@ -84,7 +84,7 @@ const Login = () => {
                                 onFailure={onFailure}
                                 cookiePolicy={'single_host_origin'}
                                 isSignedIn={false}
-                                className='h-[44px] w-[312px] mt-5 mb-5 bg-white text-black border-neutral-300' >
+                                className='h-[44px] w-[312px] mt-5 mb-5 bg-white text-black border-neutral-300 ' >
                             </GoogleLogin>
                         </div>
                         <h1 className='text-base mb-5'>Hoặc đăng nhập bằng tài khoản có sẵn</h1>
@@ -98,7 +98,7 @@ const Login = () => {
                                     onChange={formik.handleChange}
                                     value={formik.values.username}
                                     placeholder='Nhập tài khoản'
-                                    className='inputFormik'
+                                    className='inputFormik mb-2 hover:ease-in  hover:duration-300'
                                 />
                                 <input
                                     id="password"
@@ -111,7 +111,7 @@ const Login = () => {
                                 />
                                 <br />
                                 <br />
-                                <button className='btn-signin bg-[#FC5981] hover:bg-[#9ec0e2] hover:text-black ' type="submit">Đăng nhập</button>
+                                <button className='hover:ease-in  hover:duration-300 btn-signin bg-[#FC5981] hover:bg-[#9ec0e2] hover:text-black ' type="submit">Đăng nhập</button>
                             </form>
                             <div className='mt-3'>
                                 <Link to='/pass'><span className='text-[#00B6F3]'>Quên mật khẩu</span></Link></div>
