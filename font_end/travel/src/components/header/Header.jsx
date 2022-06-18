@@ -61,12 +61,12 @@ const Navbar = () => {
                                 <>
 
                                     <Link to='/login'>
-                                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg'>
+                                        <button className='border-none bg-transparent text-black mr-4 font-medium text-lg hover:ease-in  hover:duration-200'>
                                             Đăng nhập
                                         </button>
                                     </Link>
                                     <Link to='/resgister'>
-                                        <button className='px-8 py-2 font-medium text-lg'>Đăng ký</button>
+                                        <button className='px-8 py-2 font-medium bg-blue-500 text-lg hover:ease-in  hover:duration-300'>Đăng ký</button>
                                     </Link>
                                 </>
                         }

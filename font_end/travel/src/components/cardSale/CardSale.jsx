@@ -95,7 +95,7 @@ const Card = () => {
                     }
                 </Slider>
                 <div className="text-center mt-7 text-xl ">
-                    <button className="px-4 py-2 mt-2 text-pink-400 back bg-pink-100 border-pink-400">Xem thêm</button>
+                    <button className="px-4 py-2 mt-2 text-pink-400 back bg-pink-100 border-pink-400 hover:ease-in  hover:duration-300 hover:text-blue hover:bg-white">Xem thêm</button>
                 </div>
 
             </div >
