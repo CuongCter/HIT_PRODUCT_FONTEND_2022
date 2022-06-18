@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.blog {
+  width: 100%;
+  background-color: #EDF6F9;
+  padding: 70px 126px 70px 126px;
+  display: flex;
+}
+.imgCXG {
+  width: 260px;
+  height: 186px;
+}
+.heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+
+}
+.heading-small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+.blog-right {
+  display: flex;
+}
+.theme-blog {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  white-space: normal;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+
+}
+.theme-blog:hover {
+  color: #FF5F87;
+}
+.nameDS {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #FF5F87;
+}
+.time-ac {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #000000;
+  
+}
+.cmt-blog {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  white-space: normal;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+}
+.posts-outstanding {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  
+}
+.posts-outstanding-img {
+  width: 324px;
+  height: 400px;
+}
+.theme-new {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  
+}
+.theme-new-img {
+  width: 324px;
+  height: 179px;
+}
+.imgNew {
+  width: 80px;
+  height: 60px;
+}
+.info-new {
+  display: flex;
+}
+.themeNew {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.icon-date {
+  display: flex;
+}
+.dateNew {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #000000;
+  
+}
