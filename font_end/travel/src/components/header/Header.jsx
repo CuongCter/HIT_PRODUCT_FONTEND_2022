@@ -30,7 +30,7 @@ const Navbar = () => {
     return (
         <div className='header'>
             <div>
-                <video src='/videos/beach_-_3998 (Original).mp4' autoPlay loop muted />
+                <video className='vid' src='/videos/beach_-_3998 (Original).mp4' autoPlay loop muted />
             </div>
             <div className='w-screen md:h-[80px] lg:h-[56px] z-10 bg-zinc-200 fixed drop-shadow-lg '>
                 <div className='px-10 flex justify-between items-center w-full h-full '>

@@ -5,24 +5,19 @@ import { Navigate } from "react-router-dom";
 import ForgotPassword from "../modules/Auth/forgot-password/ForgotPassword";
 import Locations from "../../src/pages/Locations";
 import ChangePass from "../modules/Auth/ChangePass/ChangePass";
-
+import Room from "../../src/pages/Room";
+import Blog from "../../src/pages/Blog"
 
 const publicRoutes = [
-    
-   
     { path: '/', component: Home },
     { path: '/login', component: Login },
     { path: '/resgister', component: Resgister },
     { path: '/pass', component: ForgotPassword },
     { path: '/location', component: Locations },
     { path: '/changepass', component: ChangePass },
-    
+    { path: '/room', component: Room },
+    { path: '/blog', component: Blog}
 ]; 
-
-
-
-
-
 
 
 const privateRoutes = [];
