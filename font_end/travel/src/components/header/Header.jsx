@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className='w-screen md:h-[80px] lg:h-[56px] z-10 bg-zinc-200 fixed drop-shadow-lg '>
                 <div className='px-10 flex justify-between items-center w-full h-full '>
                     <div className='flex items-center '>
-                        <h1 className='text-3xl font-bold xl:mr-12 sm:text-3xl'>HelloTravel</h1>
+                        <h1 className='text-3xl font-bold xl:ml-10 sm:text-3xl'>HelloTravel</h1>
                         <ul className='hidden md:flex md:ml-40 text-lg  font-normal '>
                             {dataHeader.map((item) => (
                                 <li><Link to={item.linkPage} onClick className='text-black font-medium'>{item.title}</Link></li>

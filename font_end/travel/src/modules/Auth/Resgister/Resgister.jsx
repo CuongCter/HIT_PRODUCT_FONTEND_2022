@@ -6,8 +6,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import './Resgister.scss'
 
 import axios from 'axios';
+import { API } from '../const/const.api';
 
-const navigate = useNavigate
+
 const validate = values => {
     const errors = {};
     if (!values.password) {
@@ -24,6 +25,7 @@ const validate = values => {
 }
 
 const Resgister = () => {
+    const navigate = useNavigate()
     const formik = useFormik({
         initialValues: {
             account: '',
@@ -45,7 +47,7 @@ const Resgister = () => {
 
             else {
                 try {
-                    const result = await axios.post('https://api-travell.herokuapp.com/api/v1/users', {
+                    const result = await axios.post(`${API}users`, {
                         username: values.account,
                         password: values.password,
                         fullName: values.fullName,

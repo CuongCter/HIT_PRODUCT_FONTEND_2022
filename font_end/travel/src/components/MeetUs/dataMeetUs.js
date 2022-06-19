@@ -11,7 +11,7 @@ export const dataUserMeetUs = [
   {
      id: '2',
      imgCover: 'https://meta.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg',
-     imgAvt: 'https://kenh14cdn.com/203336854389633024/2021/7/29/myvanh2054286994949691217410844763204888409440211n-1627523268551486434209.jpg',
+     imgAvt: 'https://anhdep123.com/wp-content/uploads/2021/05/hinh-avatar-trang.jpg',
      name: 'Vũ Quỳnh',
      comment: 'Sự hài lòng của các bạn là niềm vui của chúng tôi',
      linkFB: 'https://www.facebook.com/vuquyh202/',
@@ -29,7 +29,7 @@ export const dataUserMeetUs = [
   {
      id: '4',
      imgCover: 'https://meta.vn/Data/image/2022/01/13/anh-dep-thien-nhien-3.jpg',
-     imgAvt: 'https://kenh14cdn.com/203336854389633024/2021/7/29/myvanh2054286994949691217410844763204888409440211n-1627523268551486434209.jpg',
+     imgAvt: 'https://anhdep123.com/wp-content/uploads/2021/05/hinh-avatar-trang.jpg',
      name: 'Lý Thị Dung',
      comment: 'Sự hài lòng của các bạn là niềm vui của chúng tôi',
      linkFB: 'https://www.facebook.com/vuquyh202/',
