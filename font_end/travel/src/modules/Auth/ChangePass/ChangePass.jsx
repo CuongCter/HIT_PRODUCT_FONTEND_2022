@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useFormik } from 'formik';
 import axios from 'axios'
 import './ChangePass.scss'
-
+import { API } from '../const/const.api'
 
 const ChangePass = () => {
 
@@ -23,7 +23,7 @@ const ChangePass = () => {
             else {
                 try {
                     console.log(values);
-                    const resData = await axios.patch('https://api-travell.herokuapp.com/api/v1/users/changePassword',
+                    const resData = await axios.patch(`${API}users/changePassword`,
                         {
                             oldPassword: values.oldPassword,
                             newPassword: values.newPassword

@@ -7,6 +7,7 @@ import { GoogleLogin } from 'react-google-login'
 import { gapi } from 'gapi-script'
 import { useFormik } from 'formik';
 import axios from 'axios'
+import { API } from '../const/const.api'
 const Login = () => {
     const navigate = useNavigate();
     const clientId = '36536591056-nqetopeqi2e466uk4ujl7dh8e73m9n73.apps.googleusercontent.com'
@@ -36,7 +37,7 @@ const Login = () => {
 
             // alert(JSON.stringify(values, null, 2));
             try {
-                const resData = await axios.post('https://api-travell.herokuapp.com/api/v1/auth/login', values)
+                const resData = await axios.post(`${API}auth/login`, values)
                 console.log(resData);
                 alert('Đăng nhập thành công')
 

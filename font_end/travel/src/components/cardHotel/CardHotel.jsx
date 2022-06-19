@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Stack, Rating } from '@mui/material'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faLocationDot, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 const CardHotel = () => {
     const settings = {
         dots: true,
@@ -47,18 +48,23 @@ const CardHotel = () => {
         <>
             <div className='slickHotel xl:pl-32 xl:pr-32'>
                 <div className='slickHotel_title'>
-                    <h1 className='text-2xl  font-medium'>Khách sạn đang thịnh hành</h1>
-                    <h2 className='mt-2 font-normal text-base'>Các khách sạn được tìm kiếm & đặt nhiều nhất do HelloTravelHelloTravel đề xuất</h2>
+                    <h1 className='text-2xl  font-medium '>Khách sạn đang thịnh hành</h1>
+                    <h2 className='mt-1 font-normal text-base'>Các khách sạn được tìm kiếm & đặt nhiều nhất do HelloTravelHelloTravel đề xuất</h2>
                 </div>
 
                 <Slider {...settings} >
                     {dataHotel.map((item) => (
                         <div className='cardHotel'>
-                            <div className='cardHotel-item m-2 '>
+                            <div className='cardHotel-item b-2 '>
                                 <div className='cardHotel-top '>
                                     <button className='mt-2 ml-2 absolute w-13 bg-pink-400 border-pink-400'>-29%</button>
                                     <img src={item.linkImg} alt={item.title} />
-                                    <h1 className='text-lg pl-2 font-semibold'>{item.title}</h1>
+                                    <div></div>
+                                    <Link to='/room' className='text-black'>
+
+                                        <h1 className='text-lg pl-2 font-semibold'>{item.title}</h1>
+
+                                    </Link>
 
                                     <Rating className='pl-2'
                                         name="size-small" defaultValue={5} size="small" />
