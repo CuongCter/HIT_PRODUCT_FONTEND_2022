@@ -8,6 +8,9 @@ import ChangePass from "../modules/Auth/ChangePass/ChangePass";
 import Room from "../../src/pages/Room";
 import Blog from "../../src/pages/Blog"
 
+import PickRoom from "../pages/PickRoom";
+import Contact from "../pages/Contact";
+
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/login', component: Login },
@@ -16,7 +19,10 @@ const publicRoutes = [
     { path: '/location', component: Locations },
     { path: '/changepass', component: ChangePass },
     { path: '/room', component: Room },
-    { path: '/blog', component: Blog}
+    { path: '/blog', component: Blog},
+    { path: '/bookRoom', component: PickRoom},
+    { path: '/contact', component: Contact}
+
 ]; 
 
 

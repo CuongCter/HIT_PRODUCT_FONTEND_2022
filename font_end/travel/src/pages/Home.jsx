@@ -14,6 +14,7 @@ import ListHotel from '../components/listHotel/ListHotel'
 import Blogs from '../components/blogs/Blogs'
 
 import CardInfo from '../components/cardInfo/CardInfo'
+import Banner from "../components/banner/Banner";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
     return (
         <div>
             <Header />
+            <Banner />
             <CardSale />
             <CardHotel />
             <InfoLocation />

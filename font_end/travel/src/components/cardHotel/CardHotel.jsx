@@ -48,14 +48,14 @@ const CardHotel = () => {
         <>
             <div className='slickHotel xl:pl-32 xl:pr-32'>
                 <div className='slickHotel_title'>
-                    <h1 className='text-2xl  font-medium '>Khách sạn đang thịnh hành</h1>
-                    <h2 className='mt-1 font-normal text-base'>Các khách sạn được tìm kiếm & đặt nhiều nhất do HelloTravelHelloTravel đề xuất</h2>
+                    <h1 className='text-2xl pt-1 font-medium '>Khách sạn đang thịnh hành</h1>
+                    <h2 className='mt-1 mb-2 font-normal text-base'>Các khách sạn được tìm kiếm & đặt nhiều nhất do HelloTravelHelloTravel đề xuất</h2>
                 </div>
 
                 <Slider {...settings} >
                     {dataHotel.map((item) => (
                         <div className='cardHotel'>
-                            <div className='cardHotel-item b-2 '>
+                            <div className='cardHotel-item  '>
                                 <div className='cardHotel-top '>
                                     <button className='mt-2 ml-2 absolute w-13 bg-pink-400 border-pink-400'>-29%</button>
                                     <img src={item.linkImg} alt={item.title} />

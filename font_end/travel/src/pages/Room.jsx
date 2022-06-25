@@ -1,4 +1,4 @@
-import ChooseRom from '../components/chooseRoom/ChooseRom'
+import ChooseRom from '../components/chooseRoom/ChooseRoom'
 import React from 'react'
 import Header from '../components/header/Header'
 import SeeHotel from '../components/seeHotel/SeeHotel'
