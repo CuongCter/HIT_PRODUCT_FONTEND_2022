@@ -2,7 +2,7 @@ import React from 'react'
 import './ChooseRoom.scss'
 import { dataChooseRoom } from './dataChooseRoom'
 import { dataChooseAssess } from './dataChooseAssess'
-
+import { Link } from 'react-router-dom'
 const ChooseRom = () => {
   return (
     <div id='chooseRoom'>
@@ -12,10 +12,19 @@ const ChooseRom = () => {
           <div className='container-left '>
             <div className='gridd '>
               <img className='img-above' src="http://pxphoto.com/files/pxphoto.com/images/slides/hotel-slide-img%20(1).jpg" alt="" />
-              <div className='container-img grid xl:grid-rows-1 grid-flow-col'>
+              {/* <div className='container-img grid xl:grid-rows-1 grid-flow-col'>
                 {dataChooseRoom.map((item, index) => {
                   return (
                     <div key={index} className="imgg">
+                      <img src={item.imgg} alt="" />
+                    </div>
+                  )
+                })}
+              </div> */}
+              <div className='container-img flex '>
+                {dataChooseRoom.map((item, index) => {
+                  return (
+                    <div key={index} className="imgg mr-1">
                       <img src={item.imgg} alt="" />
                     </div>
                   )
@@ -36,15 +45,15 @@ const ChooseRom = () => {
             </div>
           </div>
 
-          <div className='container-right'>   
-            <p>Premium Twin</p>  
+          <div className='container-right'>
+            <p>Premium Twin</p>
             <div className="above">
               <div className='above-all'>
                 <div className='above-1' >
-                  <i  class="fa-solid fa-user-group"></i>
+                  <i class="fa-solid fa-user-group"></i>
                   <p>Sức chứa tối đa: 3 người</p></div>
                 <div className='above-2'>
-                <i class="fa-solid fa-bed"></i>
+                  <i class="fa-solid fa-bed"></i>
                   <p>Hai giường đơn</p></div>
                 <div className='above-3'>
                   <i class="fa-solid fa-location-dot"></i>
@@ -79,7 +88,7 @@ const ChooseRom = () => {
               </div>
               <div className="money">
                 {dataChooseAssess.map((item, index) => {
-                  return(
+                  return (
                     <div key={index}>
                       <p className='money-discount'> {item.moneyDiscount}</p>
                       <p className='money-old'>{item.moneyOld}</p>
@@ -88,17 +97,18 @@ const ChooseRom = () => {
                   )
                 })}
                 <p className='money-date'>/phòng/đêm</p>
-                <a className='bookRoom' href="">Đặt phòng</a>
+                <Link to='/bookRoom'><a className='bookRoom-btn' href="">Đặt phòng</a></Link>
+
               </div>
             </div>
             <div className='add-select'>
               <a href="">Xem thêm 3 lựa chọn</a>
-              
+
             </div>
           </div>
-          
+
         </div>
-  
+
       </div>
     </div>
   )
