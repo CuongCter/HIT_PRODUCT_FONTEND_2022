@@ -122,6 +122,11 @@
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+  white-space: normal;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
 
 }
 
@@ -150,3 +155,32 @@
   text-align: center;
   color: #00B6F3;
 }
+
+// **************************************
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) { 
+  .evaluate {
+    width: 100%;
+    padding: 45px 25px 45px 25px;
+  }
+  .point-cmt {
+    display: none;
+  }
+}
+ 
+ // Mobile
+ @media only screen and (max-width: 739px) {
+  .evaluate {
+    background-color: white;
+    width: 100%;
+    padding: 45px 25px 45px 25px;
+  }
+  .point-cmt {
+    display: none;
+  }
+  .people-info {
+    display: none;
+  }
+ }
+
+ 

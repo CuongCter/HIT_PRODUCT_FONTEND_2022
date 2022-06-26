@@ -9,9 +9,19 @@
   padding: 70px 126px 70px 126px;
   display: flex;
 }
+.blogg-left {
+  width: 65%;
+  border-right: 0.25px solid rgba(0, 0, 0, 0.5);
+  padding-right: 70px;
+}
+.blog-info-right {
+  width: 35%;
+  padding-left: 100px;
+}
 .imgCXG {
   width: 260px;
   height: 186px;
+  border-radius: 5px;
 }
 .heading {
   font-weight: 700;
@@ -44,11 +54,28 @@
 .theme-blog:hover {
   color: #FF5F87;
 }
+
+.line-offer {
+  display: flex;
+}
+
 .nameDS {
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
   color: #FF5F87;
+}
+.icon-time {
+  display: flex;
+}
+.icon-ac > p {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 15px;
+  color: #000000;
+}
+.icon-ac {
+  display: flex;
 }
 .time-ac {
   font-weight: 400;
@@ -78,6 +105,7 @@
 .posts-outstanding-img {
   width: 324px;
   height: 400px;
+  border-radius: 5px;
 }
 .theme-new {
   font-weight: 700;
@@ -89,10 +117,12 @@
 .theme-new-img {
   width: 324px;
   height: 179px;
+  border-radius: 5px;
 }
 .imgNew {
   width: 80px;
   height: 60px;
+  border-radius: 5px;
 }
 .info-new {
   display: flex;
@@ -112,4 +142,74 @@
   line-height: 15px;
   color: #000000;
   
+}
+.posts-outstanding-p > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+//  color: #FFFFFF;
+
+}
+.theme-new-img-p > p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px; 
+//  color: #FFFFFF;
+}
+
+// **************************************
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) { 
+  .blog {
+    width: 100%;
+    padding: 70px 26px 70px 26px;
+    flex-direction: column;
+  }
+  .blogg-left {
+    width: 100%;
+    border-right: 0px;
+    padding-right: 0px;
+  }
+  .blog-info-right {
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row; 
+  }
+  .notable {
+    padding-left: 35px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 739px) {
+  .blog {
+    width: 100%;
+    padding: 70px 26px 70px 26px;
+    flex-direction: column;
+  }
+  .blogg-left {
+    width: 100%;
+    border-right: 0px;
+    padding-right: 0px;
+  }
+  .blog-info-right {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .blog-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .theme-blog {
+    padding-bottom: 15px;
+  }
+  .line-offer {
+    display: none;
+    
+  }
+  .cmt-blog {
+    display: none;
+  }
 }

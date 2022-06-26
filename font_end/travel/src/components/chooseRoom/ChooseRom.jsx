@@ -81,9 +81,9 @@ const ChooseRom = () => {
                 {dataChooseAssess.map((item, index) => {
                   return(
                     <div key={index}>
-                      <p className='money-discount'> {item.moneyDiscount}</p>
-                      <p className='money-old'>{item.moneyOld}</p>
-                      <p className='money-new'>{item.moneNew}</p>
+                      <div className='money-discount'> {item.moneyDiscount}</div>
+                      <div className='money-old'>{item.moneyOld}</div>
+                      <div className='money-new'>{item.moneNew}</div>
                     </div>
                   )
                 })}
@@ -92,7 +92,7 @@ const ChooseRom = () => {
               </div>
             </div>
             <div className='add-select'>
-              <a href="">Xem thêm 3 lựa chọn</a>
+              <a href="">Xem thêm lựa chọn</a>
               
             </div>
           </div>
