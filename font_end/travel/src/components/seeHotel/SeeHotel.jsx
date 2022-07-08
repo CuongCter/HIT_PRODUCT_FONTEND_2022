@@ -10,21 +10,11 @@ import { dataSeeHotel } from './dataSeeHotel'
 const SeeHotel = () => {
   return (
     <div className='see-hotel'>
-      {/* <div className="border"></div>
-      <div className="navbar">
-        <div>
-          <p className='theme'> Địa điểm</p>
-          <p className='name-theme'>Khách Sạn Ibis Styles Vũng Tàu</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div> */}
       <div className="hotel">
         <p className="name-hotel">Khách Sạn Ibis Styles Vũng Tàu</p>
         <Rating className='pl' name="size-small" defaultValue={5} size="small" />
         <div className="info-hotel ">
-          <div className='info-hotel-left'>
+          <div className='info-hotel-left '>
             <div className="assess">
               <button className='mr-1 mb-2 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400'><FontAwesomeIcon icon={faUmbrellaBeach} /> 9.4</button>
               <p className='assess-amount'>Tuyệt vời (104 đánh giá)</p>
@@ -34,8 +24,8 @@ const SeeHotel = () => {
               <p className="address-hotel">117, Đường Thùy Vân, Thành Phố Vũng Tàu, Bà Rịa Vũng Tàu, Việt Nam</p>   
             </div>
           </div>
-          <div className="info-hotel-right">
-            <div >
+          <div className="info-hotel-right ">
+            <div className='price-choose'>
               <p className="price" ><p className='price-old'>1.519.384đ</p> <span className='discount'>-29%</span> </p>
               <p className='price-new'>1.093.007đ</p>
             </div>
@@ -49,10 +39,10 @@ const SeeHotel = () => {
           <div className="cols-span-1">
             <img className='imgs-hotel-1' src="https://poliva.vn/wp-content/uploads/2019/07/thiet-ke-tien-sanh-khach-san-1.jpg" alt="" />
           </div>
-          <div className="grid xl:grid-cols-2 xl:cols-span-1 md:grid-cols-1 md:cols-span-1 sm:grid-cols-1 sm:cols-span-1 gap-2">
+          <div className="grid xl:grid-cols-2 xl:cols-span-1 md:grid-cols-2 md:cols-span-1 sm:grid-cols-1 sm:cols-span-1 gap-2">
             {dataSeeHotel.map((item, index) => {
               return (
-                <div key={index} className='img-hotel xl:col-span-1 sm:col-span-1 lg:col-span-1 '>
+                <div key={index} className='img-hotel col-span-1 '>
                   <img className='img-hotel-full' src={item.imgRom } alt="" />
                 </div>
               )

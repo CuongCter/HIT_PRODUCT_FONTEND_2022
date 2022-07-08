@@ -1,4 +1,4 @@
-export const dataBlogg = [
+export const dataBloggg = [
   {
     id: '1',
     imgNew: 'https://cuongdulich.com/assets/posts/1584160227-lang-cu-lan-da-lat-2.jpg',

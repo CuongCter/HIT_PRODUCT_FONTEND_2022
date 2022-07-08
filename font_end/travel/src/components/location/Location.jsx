@@ -21,7 +21,7 @@ const Location = () => {
               return (
                 <div key={index }className="new-common-item grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-3">
                   <img className='img-content' src={item.img} alt="" />
-                  <div className='content'>
+                  <div className='contentt'>
                     <p className='title'>{item.title}</p>
                     <p className='text'>{item.text}</p>
                   </div>

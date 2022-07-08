@@ -7,7 +7,6 @@
 #chooseRoom {
   background-color: #EDF6F9;
   width: 100%;
-  height: auto;
   padding: 70px 126px 70px 126px;
 }
 
@@ -21,7 +20,7 @@
 
 .container {
   background-color: white;
-  padding: 24px 25px;
+  padding: 24px 25px 24px 25px;
   width: 100%;
   display: flex;
 }
@@ -201,7 +200,6 @@
 .below {
   display: flex;
   justify-content: space-between;
-
   border-top: 0.25px solid rgba(0, 0, 0, 0.5);
   border-bottom: 0.25px solid rgba(0, 0, 0, 0.5);
 }
@@ -341,6 +339,11 @@
   width: 34px;
   height: 19px;
 
+  display: flex;
+  display: flex;
+  justify-content: end;
+
+
 
 }
 
@@ -390,4 +393,123 @@
   font-size: 14px;
   line-height: 19px;
   color: #00B6F3;
+
 }
+
+// **************************************
+// Tablet
+@media only screen and (min-width: 740px) and (max-width:1023px) { 
+  #chooseRoom {
+    padding: 70px 25px 70px 25px;
+  }
+  .above {
+    display: flex;
+    flex-direction: column;
+  }
+  .above-4 {
+    display: flex;
+    padding-left: 40px;
+    background: #FCEAE9;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-right: 230px;
+  }
+  .above-4-2  {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #E5322B;
+    padding-left: 15px;
+    padding-top: 2px;
+  }
+  .container {
+    width: 100%;
+  }
+  .container-left {
+    width: 40%;
+  }
+
+  .below {
+    display: flex;
+    flex-direction: column;
+    border-top: 0px;
+    border-bottom: 0px;
+  }
+  .money {
+    border-left: 0px;
+    padding-right: 40px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+  }
+  .add-select{
+    display: none;
+    
+  }
+
+}
+
+// Mobile
+@media only screen and (max-width: 739px) {
+  #chooseRoom {
+    padding: 70px 25px 70px 25px;
+  }
+
+  .below {
+    border-top: 0px;
+    border-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-left {
+    width: 100%;
+  }
+  .container-right {
+    width: 100%;
+  }
+  .convenient {
+    display: none;
+  }
+  .gridd {
+    width: 70%;
+    
+}
+  .above-4 {
+    display: none;
+  }
+  .container-right {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .above-3{
+    padding-left: 0px;
+  }
+  .above-2 {
+    padding-left: 0px;
+  }
+  .above-all {
+    display: flex;
+    flex-direction: column;
+  }
+  .money {
+    padding-left: 0px;
+    border-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .select {
+    width: 100%;
+  }
+}
+
+
+
