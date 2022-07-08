@@ -11,6 +11,9 @@ import Blog from "../../src/pages/Blog";
 import InsideBlog from "../../src/pages/InsideBlog";
 
 
+import PickRoom from "../pages/PickRoom";
+import Contact from "../pages/Contact";
+
 const publicRoutes = [
     { path: '/', component: Home },
     { path: '/login', component: Login },
@@ -18,9 +21,14 @@ const publicRoutes = [
     { path: '/pass', component: ForgotPassword },
     { path: '/location', component: Locations },
     { path: '/changepass', component: ChangePass },
-    { path: '/room', component: Room },
+    { path: '/room', component: Room},
     { path: '/blog', component: Blog },
-    { path: '/insideBlog', component: InsideBlog}
+    { path: '/insideBlog', component: InsideBlog},
+    { path: '/blog', component: Blog},
+    { path: '/bookRoom', component: PickRoom},
+    { path: '/contact', component: Contact}
+
+
 ]; 
 
 

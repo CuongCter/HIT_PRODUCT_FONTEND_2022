@@ -73,6 +73,7 @@ const Blogg = () => {
             )
           })}
         </div>
+        
       </div>
     </div>
   )
