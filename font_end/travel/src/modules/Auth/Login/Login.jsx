@@ -8,6 +8,7 @@ import { gapi } from 'gapi-script'
 import { useFormik } from 'formik';
 import axios from 'axios'
 import { API } from '../const/const.api'
+import storageService from '../../../services/storage.service'
 const Login = () => {
     const navigate = useNavigate();
     const clientId = '36536591056-nqetopeqi2e466uk4ujl7dh8e73m9n73.apps.googleusercontent.com'
@@ -43,8 +44,8 @@ const Login = () => {
 
                 if (resData.status === 200) {
                     navigate('/')
-                    localStorage.setItem('accessToken', resData.data.jwt);
-                    localStorage.setItem('isLogin', true)
+                    storageService.set("accessToken", resData.data.jwt)
+                    storageService.set('isLogin', true)
                 }
             } catch (err) {
                 console.log(err)
