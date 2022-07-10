@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import './Header.scss'
 import { Link, useNavigate } from 'react-router-dom'
 import { dataHeader } from './dataHeader';
+import storageService from '../../services/storage.service';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -13,18 +14,18 @@ const Navbar = () => {
     const navigate = useNavigate()
 
     const handleLogoutSystem = () => {
-        localStorage.setItem('isLogin', false)
-        const isLogin = localStorage.getItem('isLogin')
+        storageService.set('isLogin', false)
+        const isLogin = storageService.get('isLogin')
         if (isLogin === 'false') {
-            localStorage.removeItem('accessToken')
+            storageService.remove('accessToken')
             navigate('/login')
             window.history.replaceState({}, "/");
-            localStorage.removeItem('isLogin')
+            storageService.remove('isLogin')
         }
     }
 
-    const isLogin = localStorage.getItem('isLogin')
-
+    // const isLogin = storageService.getItem('isLogin')
+    const isLogin = storageService.get('isLogin')
     // console.log(isLogin);
     const [show, setShow] = useState(false)
     return (
@@ -51,7 +52,7 @@ const Navbar = () => {
                                     <div className='icon-user mr-12 font-bold text-2xl flex mb-1' onClick={() => setShow(!show)} >  <i class="fa-solid fa-user"></i></div>
                                     {
                                         show && <>
-                                            <div className='absolute h-[65px] w-[110px] border-white bg-white '>
+                                            <div className='absolute h-[65px] w-[110px] border-white bg-white  rounded-sm'>
                                                 <h1 className=' px-4 py-1 border-b-2 cursor-pointer hover:bg-violet-100' onClick={handleLogoutSystem}>Đăng xuất</h1>
                                                 <h1 className='flex justify-center cursor-pointer hover:bg-violet-100'> <Link to='/changepass ' className='text-black'>Đổi mật khẩu</Link> </h1>
                                             </div></>

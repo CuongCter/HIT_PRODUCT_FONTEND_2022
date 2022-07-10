@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Footer from '../components/footer/Footer'
 import Header from '../components/header/Header'
 import CardSale from '../components/cardSale/CardSale'
-import MeetUs from '../components/meetUs/MeetUs'
+import MeetUs from '../components/MeetUs/MeetUs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navigate, useNavigate } from 'react-router-dom'
 import InfoLocation from '../components/infoLocation/InfoLocation'

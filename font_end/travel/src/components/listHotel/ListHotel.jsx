@@ -47,7 +47,7 @@ const ListHotel = () => {
                 <h1 className='font-bold text-3xl pt-4 mb-2'>Khách sạn giá sốc</h1>
                 <div className='flex'>
                     {dataList.map((item) => (
-                        <button className='btn-location mr-3 bg-white text-black w-max-[94px] h-max-[32px] p-1 rounded-xl border-black '>{item.location}</button>
+                        <button className='btn-location mr-3  bg-white text-black w-[102px] h-[32px]  rounded-2xl border-black '>{item.location}</button>
                     ))}
                 </div>
 
@@ -79,7 +79,7 @@ const ListHotel = () => {
                                         <h1 className='flex justify-end font-medium mr-2 text-sm'>{item.pay}</h1>
                                         <div className='flex justify-between border-dashed border-2 rounded-md border-slate-200 mb-3 mt-2 p-1 mr-2'>
                                             <div className='mt-1'>
-                                                <h2 className='text-sm'>Mã: <span className='text-sm text-blue-400'>DONNHE <button className='bg-blue-400 text-sm'>-5%</button></span></h2>
+                                                <h2 className='text-sm'>Mã: <span className='text-sm text-blue-400'>DONNHE <button className='bg-blue-400 text-sm w-[40px]'>-5%</button></span></h2>
                                             </div>
                                             <div>
                                                 <h1 className='font-medium text-lg text-pink-400 text-base'>{item.pay}</h1>

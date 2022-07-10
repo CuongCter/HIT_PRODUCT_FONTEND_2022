@@ -6,6 +6,7 @@ import { useFormik } from 'formik';
 import axios from 'axios'
 import './ChangePass.scss'
 import { API } from '../const/const.api'
+import userService from "../../../services/user.service.js"
 
 const ChangePass = () => {
 
@@ -22,17 +23,21 @@ const ChangePass = () => {
             }
             else {
                 try {
+
                     console.log(values);
-                    const resData = await axios.patch(`${API}users/changePassword`,
-                        {
-                            oldPassword: values.oldPassword,
-                            newPassword: values.newPassword
-                        },
-                        // {
-                        //     headers: { authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2dXF1eW5oIiwiaWF0IjoxNjU1MjIyMDk0LCJleHAiOjE2NTUzMDg0OTR9.V_hA88YPfABajAiGOHJ7UmTBdNZoeLkVNLiFgTb4jqU' }
-                        // })
-                    )
-                    console.log(resData)
+                    userService.changePassword(values).then(data => {
+                        console.log(data)
+                    })
+                    // const resData = await axios.patch(`${API}users/changePassword`,
+                    //     {
+                    //         oldPassword: values.oldPassword,
+                    //         newPassword: values.newPassword
+                    //     },
+                    //     // {
+                    //     //     headers: { authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2dXF1eW5oIiwiaWF0IjoxNjU1MjIyMDk0LCJleHAiOjE2NTUzMDg0OTR9.V_hA88YPfABajAiGOHJ7UmTBdNZoeLkVNLiFgTb4jqU' }
+                    //     // })
+                    // )
+                    // console.log(resData)
 
                 } catch (err) {
                     console.log(err)

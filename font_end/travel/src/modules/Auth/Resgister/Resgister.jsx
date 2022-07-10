@@ -3,8 +3,10 @@ import { useFormik } from 'formik';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link, useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Resgister.scss'
-
+import userService from "../../../services/user.service.js"
 import axios from 'axios';
 import { API } from '../const/const.api';
 
@@ -42,11 +44,15 @@ const Resgister = () => {
                 alert('Vui lòng điền đầy đủ thông tin')
             }
             else if (values.password !== values.confirmPassword) {
-                alert('Mật khẩu xác thực khôgng khớp')
+                alert('Mật khẩu xác thực không khớp')
             }
 
             else {
                 try {
+                    // console.log(values);
+                    // userService.resgister(values).then(data => {
+                    //     console.log(data)
+                    // })
                     const result = await axios.post(`${API}users`, {
                         username: values.account,
                         password: values.password,
@@ -61,8 +67,7 @@ const Resgister = () => {
                     }
                 }
                 catch (err) {
-                    console.log(err)
-                    //alert('Tài khoản đã tồn tại')
+                    console.log(err);
                 }
             }
         },

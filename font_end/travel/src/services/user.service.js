@@ -1,5 +1,4 @@
-import HttpService from "../http-service";
-
+import HttpService from "./http-service";
 class UserService extends HttpService {
   async getAllUser(page) {
     try {
@@ -67,6 +66,37 @@ class UserService extends HttpService {
   async getUserInfo(payload) {
     try {
       const response = await this.get(`/users/${payload}`);
+
+      return response.data;
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
+  async changePassword({newPassword, oldPassword}) {
+    try {
+      const response = await this.patch(`users/changePassword`, {
+        body: {
+          newPassword,
+          oldPassword
+        }
+      });
+
+      return response.data;
+    } catch (error) {
+      throw new Error(error.message);
+    }
+  }
+  async register({username, password, phoneNumber,fullName,email}) {
+    try {
+      const response = await this.post(`users`, {
+        body: {
+          username,
+          password,
+          phoneNumber,
+          fullName,
+          email
+        }
+      });
 
       return response.data;
     } catch (error) {
