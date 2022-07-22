@@ -57,7 +57,7 @@ const ListHotel = () => {
                             <div className='cardList'>
                                 <div className='cardList-item  '>
                                     <div className='cardList-top '>
-                                        <button className='mt-2 ml-2 absolute w-14 bg-pink-400 border-pink-400'>{item.promotion}</button>
+                                        <button className='mt-2 ml-2 absolute w-14 bg-pink-400 border-pink-400 hover:text-pink-500'>{item.promotion}</button>
                                         <img src={item.linkImg} alt={item.title} />
                                         <h1 className='text-base pl-2 font-semibold'>{item.title}</h1>
 
@@ -74,12 +74,12 @@ const ListHotel = () => {
                                             <button className='mr-1 mb-1 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400'><FontAwesomeIcon className='text-sm' icon={faUmbrellaBeach} /> {item.point}</button>
                                             <h3 className='text-sm'>{item.cmt}</h3>
                                         </div>
-                                        <span className='bg-slate-200 border-neutral-100 rounded-sm text-blue-500 text-sm'>{item.time}</span>
+                                        <span className='bg-slate-200 border-neutral-100 p-1 rounded-[5px] text-blue-500 text-sm '>{item.time}</span>
                                         <h2 className="flex justify-end  line-through font-thin right-0 mr-2 text-sm">{item.price}</h2>
                                         <h1 className='flex justify-end font-medium mr-2 text-sm'>{item.pay}</h1>
                                         <div className='flex justify-between border-dashed border-2 rounded-md border-slate-200 mb-3 mt-2 p-1 mr-2'>
                                             <div className='mt-1'>
-                                                <h2 className='text-sm'>Mã: <span className='text-sm text-blue-400'>DONNHE <button className='bg-blue-400 text-sm w-[40px]'>-5%</button></span></h2>
+                                                <h2 className='text-sm'>Mã: <span className='text-sm  text-blue-400'>DONNHE <button className='bg-blue-400 text-sm w-[40px] border-none'>-5%</button></span></h2>
                                             </div>
                                             <div>
                                                 <h1 className='font-medium text-lg text-pink-400 text-base'>{item.pay}</h1>

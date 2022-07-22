@@ -69,7 +69,7 @@ const Navbar = () => {
                                         </button>
                                     </Link>
                                     <Link to='/resgister'>
-                                        <button className='px-8 py-2 font-medium bg-blue-500 text-lg hover:ease-in  hover:duration-300'>Đăng ký</button>
+                                        <button className='px-8 py-2 border-none font-medium bg-blue-500 text-lg hover:ease-in  hover:duration-300'>Đăng ký</button>
                                     </Link>
                                 </>
                         }

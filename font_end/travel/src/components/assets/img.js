@@ -7,7 +7,7 @@ import hoian from './imgs/hoi an.jpg'
 import sale from './imgs/flashsalelogo.png'
 export const imgs = {
     imgSale: sale,
-    img1: hanoi,
+    img1: hanoi,    
     title1: 'Hà Nội',
     img2: danang,   
     title1: 'Đà Nẵng',
@@ -19,4 +19,5 @@ export const imgs = {
     title1: 'Phú Quốc',
     img6: hoian,
     title1: 'Hội An',
+
 }

@@ -14,6 +14,7 @@ import InsideBlog from "../../src/pages/InsideBlog";
 
 import PickRoom from "../pages/PickRoom";
 import Contact from "../pages/Contact";
+import Service from "../pages/Service";
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -27,8 +28,8 @@ const publicRoutes = [
     { path: '/insideBlog', component: InsideBlog},
     { path: '/blog', component: Blog},
     { path: '/bookRoom', component: PickRoom},
-    { path: '/contact', component: Contact}
-
+    { path: '/contact', component: Contact},
+    {path : '/services', component: Service}
 
 ]; 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Slider from "react-slick";
 import { dataBestSeller } from './data';
 import './CardSale.scss'
@@ -8,11 +8,25 @@ import { Stack, Rating } from '@mui/material'
 import { imgs } from '../assets/img'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocation, faLocationDot, faUmbrellaBeach } from '@fortawesome/free-solid-svg-icons'
-
+import { axios } from 'axios'
 
 const Card = () => {
-
-
+    // const [hotelSale, setHotelSale] = useState([]);
+    // const fetchHotelSale = async () => {
+    //     try {
+    //         const res = await axios.get(`https://api-travell.herokuapp.com/api/v1/hotels`);
+    //         setHotelSale(res.data);
+    //     } catch (err) {
+    //         console.log(err);
+    //     }
+    // }
+    // useEffect(() => {
+    //     fetchHotelSale();
+    // }, [])
+    // const fetchData = () => {
+    //     return axios.get("https://api-travell.herokuapp.com/api/v1/hotelst")
+    //         .then((response) => console.log(response.data));
+    // }
     const settings = {
         dots: true,
         infinite: false,
@@ -50,12 +64,26 @@ const Card = () => {
     };
     return (
         <>
+
             <div className='slickSale xl:pl-32 xl:pr-32 sm:pl-5'>
                 <div className='slickSale_img pt-3 pb-5 ml-2'>
                     <img style={{ height: 64, marginTop: 15 }} src={imgs.imgSale} alt="" />
                 </div>
+                {/* <div>
+                    {
+
+                        hotelSale ? (
+                            hotelSale.map((item) => (
+                                <div>{item.name}</div>
+                            ))
+                        ) : (
+                            <div>ssaaaaaa</div>
+                        )
+                    }
+                </div> */}
 
                 <Slider {...settings} >
+
                     {dataBestSeller.map((item) => (
                         <div className='cardSale'>
                             <div className='cardSale-item '>
@@ -74,7 +102,7 @@ const Card = () => {
 
                                     </div>
                                     <div className='flex'>
-                                        <button className='mr-1 mb-2 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400'><FontAwesomeIcon icon={faUmbrellaBeach} /> {item.point}</button>
+                                        <button className='font-semibold mr-1 mb-2 h-6 w-14 bg-slate-200 border-neutral-100 text-pink-400 hover:text-pink-500'><FontAwesomeIcon icon={faUmbrellaBeach} /> {item.point}</button>
                                         <h4 className=''>{item.cmt}</h4>
                                     </div>
                                     <span className='bg-slate-200 text-sm border-neutral-100 rounded-sm text-blue-500'>{item.time}</span>
@@ -84,11 +112,8 @@ const Card = () => {
                                             <h3 className="justify-end line-through mt-5">{item.price}</h3>
                                             <h1 className='flex justify-end text-lg font-medium text-pink-400'>???</h1>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
                     ))
